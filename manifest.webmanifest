@@ -1,0 +1,11 @@
+{
+  "name": "POWER CRUNCH Mobile v2",
+  "short_name": "POWER CRUNCH",
+  "description": "Seeded college football matchup simulator with ratings, rankings and audit history.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "orientation": "portrait-primary"
+}
