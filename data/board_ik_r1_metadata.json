@@ -1,0 +1,13 @@
+{
+  "data_version": "2026-preseason-board-IK-R1",
+  "board": "2026 Board I-K CANONICAL APPROVED R1 REISSUE",
+  "board_team_count": 121,
+  "simulation_team_count": 134,
+  "power_to_elo": {"intercept": 1100, "slope": 1000},
+  "fcs_policy": "13 synthetic FCS teams assigned identical Power equal to arithmetic mean of the lowest 10% (13 teams) of Board I-K",
+  "fcs_power": 0.28936754250437563,
+  "fcs_overall_elo": 1389.3675425043757,
+  "display_rating_scale": {"minimum": 60, "maximum": 99, "method": "linear min-max independently for overall/offense/defense", "simulation_use": false},
+  "unit_method": "Preserve each team’s prior offense-minus-overall and defense-minus-overall Elo deltas; recenter both units on the new Board I-K overall Elo anchor.",
+  "source_sha256": "6b4cec1e48b34cb9eca5c224f5ef8750cca5acc40ecfd0bc42ed62976cbd4c9a"
+}
