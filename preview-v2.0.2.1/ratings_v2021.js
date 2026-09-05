@@ -1,0 +1,157 @@
+// POWER CRUNCH v2.0.2.1 candidate runtime.
+// Fixes: independent power-to-margin calibration, mean-preserving football-score sampler,
+// exact discrete pregame/live win probability, symmetric overtime resolution.
+(function(){
+const PRODUCT_VERSION='PC-MOBILE-v2.0.2.1';
+const DATA_VERSION='2026-week2-eloK70-pscore04-calib2021';
+const RATING_SCALE='60-99-linear-minmax';
+const C=window.PC_PSCORE_CONTROLS;
+const P=window.PC_PROFILE_MAP;
+const CFG={
+  powerToMargin:80.0,
+  homeField:2.2,
+  neutralField:0.0,
+  scoreSigma:4.4,
+  qWeights:[0.24,0.26,0.24,0.26],
+  scoreValues:[0,3,6,7,10,13,14,17,20,21,24,27,28,31,34,35]
+};
+
+window.PC_ENGINE_VERSION=PRODUCT_VERSION;
+window.PC_DATA_VERSION=DATA_VERSION;
+window.PC_MODEL_NAME='EloK70 + independent margin calibration + PSCORE scoring shape';
+window.PC_MARGIN_SOURCE='v2.0.2.1 independent power-to-margin calibration';
+window.PC_MARGIN_CONTROLS=CFG;
+
+const bounds={};
+for(const field of ['overall','offense','defense']){
+  const values=T.map(t=>t[field]);
+  bounds[field]={lo:Math.min(...values),hi:Math.max(...values)};
+}
+human=function(field,t){
+  const b=bounds[field];
+  if(!b||b.hi===b.lo)return 80;
+  const score=60+39*((t[field]-b.lo)/(b.hi-b.lo));
+  return Math.max(60,Math.min(99,Math.round(score)));
+};
+label=function(n){return n>=96?'National Elite':n>=92?'Elite':n>=88?'Excellent':n>=84?'Very Good':n>=80?'Strong':n>=76?'Above Average':n>=72?'Average':n>=68?'Below Average':n>=64?'Weak':'Bottom Tier';};
+
+const pmfCache=new Map(),remCache=new Map();
+function footballPMF(target){
+  const maxV=CFG.scoreValues[CFG.scoreValues.length-1];
+  const t=Math.max(0,Math.min(maxV,target));
+  const key=t.toFixed(5);
+  if(pmfCache.has(key))return pmfCache.get(key);
+  if(t<=1e-10){const p=[[0,1]];pmfCache.set(key,p);return p;}
+  if(t>=maxV-1e-10){const p=[[maxV,1]];pmfCache.set(key,p);return p;}
+  let lo=-80,hi=120;
+  for(let i=0;i<64;i++){
+    const c=(lo+hi)/2;
+    let z=0,mean=0;
+    for(const v of CFG.scoreValues){const w=Math.exp(-0.5*Math.pow((v-c)/CFG.scoreSigma,2));z+=w;mean+=v*w;}
+    mean/=z;
+    if(mean<t)lo=c;else hi=c;
+  }
+  const center=(lo+hi)/2;
+  let z=0;const raw=[];
+  for(const v of CFG.scoreValues){const w=Math.exp(-0.5*Math.pow((v-center)/CFG.scoreSigma,2));raw.push([v,w]);z+=w;}
+  const out=raw.map(([v,w])=>[v,w/z]);
+  pmfCache.set(key,out);return out;
+}
+function samplePMF(pmf,r){
+  let u=r(),cum=0;
+  for(const [v,p] of pmf){cum+=p;if(u<=cum)return v;}
+  return pmf[pmf.length-1][0];
+}
+function convolve(a,b){
+  const out=new Map();
+  for(const [sa,pa] of a)for(const [sb,pb] of b)out.set(sa+sb,(out.get(sa+sb)||0)+pa*pb);
+  return out;
+}
+function remainingPMF(teamTarget,qDone){
+  const key=teamTarget.toFixed(5)+'|'+qDone;
+  if(remCache.has(key))return remCache.get(key);
+  let out=new Map([[0,1]]);
+  for(let q=qDone;q<4;q++)out=convolve(out,new Map(footballPMF(teamTarget*CFG.qWeights[q])));
+  remCache.set(key,out);return out;
+}
+function homeWinProbability(ap,hp,qDone=0,as=0,hs=0){
+  const A=remainingPMF(ap,qDone),H=remainingPMF(hp,qDone);
+  let home=0,tie=0;
+  for(const [a,pa] of A)for(const [h,ph] of H){
+    const af=as+a,hf=hs+h,p=pa*ph;
+    if(hf>af)home+=p;else if(hf===af)tie+=p;
+  }
+  return Math.max(0,Math.min(1,home+0.5*tie));
+}
+
+// v2.0.2.1 margin authority: refreshed Power difference only, plus explicit site HFA.
+// PSCORE profile tilt remains scoring-shape only and shifts both team scores equally.
+matchup=function(a,h,n){
+  const pa=P[a.short],ph=P[h.short];
+  const site=n?CFG.neutralField:CFG.homeField;
+  const m=(ph.p-pa.p)*CFG.powerToMargin+site; // home margin
+  const tempoAdj=((a.tempo+h.tempo)-1.04)*14;
+  const m1Total=Math.max(C.baseTotal+tempoAdj,Math.abs(m)+2*C.minTeamScore);
+  const profileShift=ph.st+pa.st;
+  const hp=(m1Total+m)/2+profileShift;
+  const ap=(m1Total-m)/2+profileShift;
+  const apc=Math.max(C.minTeamScore,ap),hpc=Math.max(C.minTeamScore,hp);
+  return{m,ap:apc,hp:hpc,p:homeWinProbability(apc,hpc),profileShift,tempoAdj,m1Total,site,powerGap:ph.p-pa.p};
+};
+
+// Exact-mean quarter scoring over football-like score values.
+quarterPoints=function(team,opp,r,q){
+  const p=matchup(S.a,S.h,S.n);
+  const target=team.short===S.a.short?p.ap:p.hp;
+  const mean=Math.max(0,target*(CFG.qWeights[q-1]||0.25));
+  return samplePMF(footballPMF(mean),r);
+};
+
+live=function(){
+  const p=matchup(S.a,S.h,S.n),as=sum(S.aq),hs=sum(S.hq),qDone=S.q;
+  const remA=p.ap*CFG.qWeights.slice(qDone).reduce((x,y)=>x+y,0);
+  const remH=p.hp*CFG.qWeights.slice(qDone).reduce((x,y)=>x+y,0);
+  return{...p,m:(hs-as)+(remH-remA),ap:as+remA,hp:hs+remH,p:homeWinProbability(p.ap,p.hp,qDone,as,hs)};
+};
+
+ratingCard=function(t){
+  const v=P[t.short];
+  return`<div class="team-card"><h3>${t.team}</h3><div class="conf">${t.conference} · National #${R.overall[t.short]}</div>${['overall','offense','defense'].map(f=>{let n=human(f,t);return`<div class="rating-line"><span>${f[0].toUpperCase()+f.slice(1)}</span><b>${n}</b><em>${label(n)}</em></div>`}).join('')}<details><summary>Raw model ratings</summary><div class="raw">Overall Elo ${t.overall.toFixed(2)} · PSCORE Offense ${t.offense.toFixed(2)} · PSCORE Defense ${t.defense.toFixed(2)}<br>Power ${v.p.toFixed(4)} · Shrunk profile tilt ${v.st.toFixed(3)} pts<br>Margin slope ${CFG.powerToMargin.toFixed(1)} · HFA ${CFG.homeField.toFixed(1)}</div></details></div>`;
+};
+
+const priorAudit=audit;
+audit=function(){
+  const x=priorAudit(),p=matchup(S.a,S.h,S.n);
+  x.engineVersion=PRODUCT_VERSION;x.dataVersion=DATA_VERSION;x.ratingScale=RATING_SCALE;
+  x.model=window.PC_MODEL_NAME;x.overallSource=window.PC_OVERALL_SOURCE;x.unitSource=window.PC_UNIT_SOURCE;
+  x.marginSource=window.PC_MARGIN_SOURCE;x.powerToMargin=CFG.powerToMargin;x.homeField=CFG.homeField;
+  x.pscoreProfileShift=p.profileShift;x.pscoreM1Total=p.m1Total;x.tempoTotalAdjustment=p.tempoAdj;
+  x.projectionPolicy='Power-difference margin + explicit HFA; symmetric PSCORE profile shift';
+  x.scoringPolicy='Mean-preserving discrete football-score PMF';
+  x.winProbabilityPolicy='Exact discrete remaining-score distribution with fair tie split';
+  return x;
+};
+
+// Replace the inherited home-favoring/tie-repeat OT branch with a symmetric resolver.
+const priorAdvance=advance;
+advance=function(){
+  if(S.q<4||sum(S.aq)!==sum(S.hq))return priorAdvance();
+  S.ot++;
+  let ap=3+(S.r()<.62?3:0)+(S.r()<.45?1:0),hp=3+(S.r()<.62?3:0)+(S.r()<.45?1:0);
+  if(ap===hp){if(S.r()<.5)ap+=2;else hp+=2;}
+  S.aq[3]+=ap;S.hq[3]+=hp;
+  S.possessions.push({quarter:`OT${S.ot}`,offense:'Both',short:'OT',result:'Overtime',points:ap+hp,awayScore:sum(S.aq),homeScore:sum(S.hq),score:scoreLabel(sum(S.aq),sum(S.hq))});
+  $('log').insertAdjacentHTML('afterbegin',`<div class="drive"><b>OT${S.ot}</b> · ${S.a.short} ${ap}, ${S.h.short} ${hp} · <strong>${scoreLabel(sum(S.aq),sum(S.hq))}</strong></div>`);
+  render();
+};
+$('next').onclick=advance;
+
+const priorReplayHistory=replayHistory;
+replayHistory=function(id){
+  const g=getHistory().find(x=>x.simulationId===id);if(!g)return;
+  if(g.dataVersion&&g.dataVersion!==DATA_VERSION){const ok=confirm('This audit was created with '+g.dataVersion+'. Re-simulating now uses '+DATA_VERSION+' and may not reproduce the archived score. Continue with the saved teams and seed?');if(!ok)return;}
+  priorReplayHistory(id);
+};
+
+renderRatings();
+})();
