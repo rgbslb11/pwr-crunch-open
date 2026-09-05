@@ -1,7 +1,7 @@
 {
-  "name": "POWER CRUNCH Mobile v2.0.2",
-  "short_name": "POWER CRUNCH",
-  "description": "Week 2 EloK70 + PSCORE calibrated seeded college football simulator.",
+  "name": "POWER CRUNCH v2.0.1 Preview",
+  "short_name": "PC Preview",
+  "description": "Isolated POWER CRUNCH Board I-K mobile preview.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
