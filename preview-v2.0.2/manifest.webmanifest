@@ -1,0 +1,11 @@
+{
+  "name": "POWER CRUNCH Mobile v2.0.2",
+  "short_name": "POWER CRUNCH",
+  "description": "Week 2 EloK70 + PSCORE calibrated seeded college football simulator.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "orientation": "portrait-primary"
+}
