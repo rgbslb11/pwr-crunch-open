@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "canonical_count": 121,
+  "synthetic_fcs_count": 13,
+  "simulation_count": 134,
+  "week1_pscore_join_missing": [],
+  "fcs_equal": true,
+  "display_ranges": {
+    "elo": {"min": 60, "max": 99},
+    "offenseRaw": {"min": 60, "max": 99},
+    "defenseRaw": {"min": 60, "max": 99}
+  },
+  "sample_margin_invariants": [
+    {"away":"TEX","home":"UGA","margin":-0.06024630628268168,"profile_shift":0.1591735459357243,"home_points":26.251599412402225,"away_points":26.311845718684904},
+    {"away":"WVU","home":"PITT","margin":24.589707078568118,"profile_shift":-0.07196566344061002,"home_points":38.345436895451286,"away_points":13.75572981688317},
+    {"away":"AF","home":"NAVY","margin":28.59616896693886,"profile_shift":-0.05690426059829363,"home_points":40.363729242478975,"away_points":11.767560275540115},
+    {"away":"EMU","home":"TEX","margin":71.67386352473557,"profile_shift":0.08083071882612754,"home_points":72.75469424356169,"away_points":1.0808307188261275}
+  ]
+}
