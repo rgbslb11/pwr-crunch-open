@@ -1,0 +1,15 @@
+{
+  "engine_version": "PC-MOBILE-v2.0.3",
+  "data_version": "2026-postW3-gamecast-power-v1.1-fcs60",
+  "rating_source": "SYNTHCAST_GAMECAST_W4_TEAM_OFF_DEF_POWER_121_v1.1.xlsx",
+  "rating_source_sha256": "a76a6d7d7032c120f1f47ac8c49021bf726164ba734bfbffb92f230d42896134",
+  "through_week": 3,
+  "use_week": 4,
+  "population": {"canonical":121,"synthetic_fcs":13,"simulation":134},
+  "canonical_policy": "Use attached GameCast deployment TEAM/OFF/DEF integers directly as rating authority.",
+  "fcs_policy": "All 13 synthetic FCS teams fixed at TEAM/OFF/DEF 60/60/60.",
+  "rating_scale": "60-99 direct deployment scale; no re-normalization.",
+  "simulation_bridge": {"margin_per_team_rating":0.75,"home_field_points":2.2,"neutral_field_points":0.0,"base_total":54.0,"unit_total_per_rating":1.0,"tempo_adjustment":"retained from team profile; symmetric total-only","environment":"retained temperature/precipitation/even-team controls from v2.0.2.2 lineage"},
+  "rating_identity": "For canonical rows, OFF + DEF = 2 * TEAM.",
+  "fcs_codes": ["EMU","TOL","WMU","SAC","IDHO","SUU","CP","WKU","CHAR","DUQ","ULM","ARST","ULL"]
+}

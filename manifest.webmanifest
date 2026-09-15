@@ -1,7 +1,7 @@
 {
-  "name": "POWER CRUNCH Mobile v2.0.2",
+  "name": "POWER CRUNCH Mobile v2.0.3",
   "short_name": "POWER CRUNCH",
-  "description": "Week 2 EloK70 + PSCORE calibrated seeded college football simulator.",
+  "description": "Post-Week 3 TEAM/OFF/DEF ratings for Week 4 use with FCS fixed at 60/60/60.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

@@ -1,0 +1,14 @@
+{
+  "status":"PASS",
+  "source":"SYNTHCAST_GAMECAST_W4_TEAM_OFF_DEF_POWER_121_v1.1.xlsx",
+  "source_sha256":"a76a6d7d7032c120f1f47ac8c49021bf726164ba734bfbffb92f230d42896134",
+  "canonical_rows":121,
+  "unique_canonical_shorts":121,
+  "fcs_overlap_with_source":[],
+  "fcs_count":13,
+  "simulation_count":134,
+  "canonical_bounds":{"overall":[60,99],"offense":[60,99],"defense":[60,99]},
+  "all_integer_60_99":true,
+  "mean_identity_pass":true,
+  "fcs_exact_60_60_60":true
+}
