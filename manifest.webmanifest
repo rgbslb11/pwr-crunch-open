@@ -1,7 +1,7 @@
 {
-  "name": "POWER CRUNCH Mobile v2.0.3",
+  "name": "POWER CRUNCH Mobile v2.0.4",
   "short_name": "POWER CRUNCH",
-  "description": "Post-Week 3 TEAM/OFF/DEF ratings for Week 4 use with FCS fixed at 60/60/60.",
+  "description": "Week 4 canonical TEAM/OFF/DEF ratings with FCS fixed at 60/60/60, HFA 2.5, and live reciprocal strength prototypes A/B.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
