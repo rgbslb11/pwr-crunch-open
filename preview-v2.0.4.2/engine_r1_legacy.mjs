@@ -4,7 +4,7 @@
  * Pure module: no DOM, storage, network, service worker, or production fallback.
  */
 
-export const ENGINE_ID = 'PC-MOBILE-v2.0.4.2-R1-QUARTERFIX1';
+export const ENGINE_ID = 'PC-MOBILE-v2.0.4.2-R1-PROTOTYPE';
 export const DATA_ID = '2026-through-W04-for-W05-operator-ratings-v1';
 export const CONFIG_ID = 'PC-2042-R1-PROVISIONAL-2026-09-23';
 export const RNG_ID = 'PC-SHA256-EVENT-v1';
@@ -326,7 +326,7 @@ function conversionAfterTd(state, side, teamPossession, ctx, period='REG') {
   const str = driveStrength(eff[side], eff[otherSide(side)], side, state.initial.neutral);
   const w = weatherLogit(state.initial);
   const p = clamp(logistic(logit(base)+PARAMS.scoreLogitPerDriveStrength*str.total+w.total),0.05,0.95);
-  const d = eventDraw({...ctx, team:state.teams[side].code,possession:teamPossession,event:'try.2pt'});
+  const d = eventDraw({...ctx, team:state.teams[side].code, possession:teamPossession, event:'try.2pt'});
   return {kind:'TWO_POINT', probability:p, made:d.u<p, points:d.u<p?2:0, draw:d, strength:str, weather:w};
 }
 
@@ -364,9 +364,6 @@ export function createGame(rows, input) {
     regSecondsRemaining:3600,
     teamPossessions:{away:0,home:0},
     nextPossession:1,
-    pendingDrive:null,
-    periodsStarted:[false,false,false,false],
-    pausedAfterQuarter:null,
     score:{away:0,home:0},
     quarters:{away:[0,0,0,0],home:[0,0,0,0]},
     overtime:{away:[],home:[]},
@@ -386,7 +383,7 @@ export function setLiveControls(state, patch) {
   demand(typeof next.comebackEnabled==='boolean','invalid comeback toggle');
   if (canonicalJSON(next) === canonicalJSON(state.controls)) return state;
   state.controls = next;
-  state.changes.push({sequence:state.changes.length+1,effectiveFromPossession:state.nextPossession+(state.pendingDrive?1:0),patch:{...patch},controls:{...next}});
+  state.changes.push({sequence:state.changes.length+1,effectiveFromPossession:state.nextPossession,patch:{...patch},controls:{...next}});
   return state;
 }
 
@@ -409,54 +406,24 @@ function eventContext(state, domain, replicate) {
   return {seed:state.initial.seed,domain,replicate};
 }
 
-// Track display state separately from the next period's clock. At 0:00 of Q1,
-// Q2 is not played merely because regulationQuarter(2700) returns 2.
-function markRegulationProgress(state, fromSeconds, toSeconds) {
-  if (fromSeconds <= toSeconds) return;
-  const first = regulationQuarter(fromSeconds);
-  const last = scoringQuarter(toSeconds, fromSeconds);
-  for (let q=first; q<=last; q++) state.periodsStarted[q-1]=true;
-  state.pausedAfterQuarter = toSeconds % 900 === 0 ? last : null;
-}
-
-function advanceRegulation(state, domain='game', replicate=0, record=true, stopAtQuarterBoundary=false) {
+function advanceRegulation(state, domain='game', replicate=0, record=true) {
+  const side = state.currentSide, opp = otherSide(side);
+  const beforeSeconds = state.regSecondsRemaining;
+  const startClock = quarterClock(beforeSeconds);
+  const teamPossession = state.teamPossessions[side] + 1;
   const ctx = eventContext(state,domain,replicate);
-  if (!state.pendingDrive) {
-    const side=state.currentSide, teamPossession=state.teamPossessions[side]+1;
-    const startClock=quarterClock(state.regSecondsRemaining);
-    const effective=effectivePair(state,startClock.quarter);
-    state.pendingDrive={
-      side, opp:otherSide(side), teamPossession, beforeSeconds:state.regSecondsRemaining,
-      startClock, startYardsToGoal:state.yardsToGoal, scoreBefore:{...state.score},
-      controls:{...state.controls}, effective,
-      probabilityModel:driveProbabilities(state,side,state.yardsToGoal,startClock.quarter),
-      duration:drawDuration(state,side,teamPossession,ctx)
-    };
-    state.teamPossessions[side]++;
-  }
-  const drive=state.pendingDrive;
-  const {side,opp,teamPossession,beforeSeconds,startClock,startYardsToGoal,scoreBefore,effective}=drive;
-  const duration=drive.duration;
-  const fromSeconds=state.regSecondsRemaining;
-  const currentClock=quarterClock(fromSeconds);
-  const elapsed=beforeSeconds-fromSeconds;
-  const remainingDriveSeconds=duration.seconds-elapsed;
-  const boundary=secondsUntilHalfOrGame(beforeSeconds);
+  const effective = effectivePair(state,startClock.quarter);
+  const duration = drawDuration(state,side,teamPossession,ctx);
+  const boundary = secondsUntilHalfOrGame(beforeSeconds);
+  const scoreBefore = {...state.score};
+  const startYardsToGoal = state.yardsToGoal;
+  const rng = {duration:duration.draws};
 
-  // Only time is committed at a Q1/Q3 boundary. No outcome, scoring, field
-  // transition or new possession is sampled until this same drive finishes.
-  if (stopAtQuarterBoundary && [1,3].includes(currentClock.quarter)
-      && remainingDriveSeconds > currentClock.seconds) {
-    state.regSecondsRemaining=fromSeconds-currentClock.seconds;
-    markRegulationProgress(state,fromSeconds,state.regSecondsRemaining);
-    return {kind:'QUARTER_BOUNDARY',quarter:currentClock.quarter,completed:false,
-      index:state.nextPossession,offense:side,teamPossession,scoreAfter:{...state.score}};
-  }
-  const rng={duration:duration.draws};
+  state.teamPossessions[side]++;
   let result, pointsOffense=0, pointsDefense=0, conversion=null, probabilityModel=null, outcomeDraw=null, field=null;
   if (duration.seconds >= boundary) {
     const actual = boundary;
-    state.regSecondsRemaining = beforeSeconds - actual;
+    state.regSecondsRemaining -= actual;
     result = beforeSeconds > 1800 ? 'END_HALF' : 'END_GAME';
     duration.actualSeconds = actual;
     if (result === 'END_HALF') {
@@ -467,9 +434,9 @@ function advanceRegulation(state, domain='game', replicate=0, record=true, stopA
     }
   } else {
     duration.actualSeconds = duration.seconds;
-    state.regSecondsRemaining = beforeSeconds - duration.seconds;
+    state.regSecondsRemaining -= duration.seconds;
     const endQuarter = scoringQuarter(state.regSecondsRemaining,beforeSeconds);
-    probabilityModel = drive.probabilityModel;
+    probabilityModel = driveProbabilities(state,side,startYardsToGoal,startClock.quarter);
     outcomeDraw = eventDraw({...ctx,team:state.teams[side].code,possession:teamPossession,event:'drive.outcome'});
     rng.outcome = outcomeDraw;
     const sampled = sampleCategorical(probabilityModel.probabilities,outcomeDraw);
@@ -494,8 +461,6 @@ function advanceRegulation(state, domain='game', replicate=0, record=true, stopA
     state.currentSide = opp;
     state.yardsToGoal = field.yardsToGoal;
   }
-  markRegulationProgress(state,fromSeconds,state.regSecondsRemaining);
-  state.pendingDrive=null;
   const afterClock = state.regSecondsRemaining > 0 ? quarterClock(state.regSecondsRemaining) : {quarter:4,seconds:0};
   const event = {
     index:state.nextPossession, phase:'REG', offense:side, defense:opp, teamPossession,
@@ -503,7 +468,7 @@ function advanceRegulation(state, domain='game', replicate=0, record=true, stopA
     durationMultiplier:duration.multiplier, startYardsToGoal, nextYardsToGoal:state.yardsToGoal,
     baseRatings:{away:pickRatings(state.teams.away),home:pickRatings(state.teams.home)},
     effectiveRatings:{away:pickRatings(effective.away),home:pickRatings(effective.home)},
-    controls:{...drive.controls}, modifier:{manual:effective.manual,prototype:effective.prototype,comeback:effective.comeback,requested:effective.requested,combined:effective.combined,clipped:effective.clipped,appliedComeback:effective.appliedComeback,awayMultiplier:effective.awayMultiplier,homeMultiplier:effective.homeMultiplier},
+    controls:{...state.controls}, modifier:{manual:effective.manual,prototype:effective.prototype,comeback:effective.comeback,requested:effective.requested,combined:effective.combined,clipped:effective.clipped,appliedComeback:effective.appliedComeback,awayMultiplier:effective.awayMultiplier,homeMultiplier:effective.homeMultiplier},
     probabilityModel: probabilityModel ? compactProbabilityModel(probabilityModel) : null,
     result, conversion:conversion ? stripConversion(conversion) : null,
     points:{offense:pointsOffense,defense:pointsDefense}, scoreBefore, scoreAfter:{...state.score}, rng,
@@ -555,9 +520,9 @@ function advanceOvertime(state, domain='game', replicate=0, record=true) {
   return event;
 }
 
-export function advancePossession(state,{domain='game',replicate=0,record=true,stopAtQuarterBoundary=false}={}){
+export function advancePossession(state,{domain='game',replicate=0,record=true}={}){
   demand(!state.final,'game already final');
-  if(state.regSecondsRemaining>0)return advanceRegulation(state,domain,replicate,record,stopAtQuarterBoundary);
+  if(state.regSecondsRemaining>0)return advanceRegulation(state,domain,replicate,record);
   if(!state.ot){
     if(state.score.away!==state.score.home){finish(state);demand(false,'game should already be final');}
     startOvertime(state,eventContext(state,domain,replicate));
@@ -567,15 +532,16 @@ export function advancePossession(state,{domain='game',replicate=0,record=true,s
 
 export function playToQuarterBoundary(state,{domain='game',replicate=0,record=true,maxPossessions=100}={}){
   demand(!state.final,'game already final');
-  const inRegulation=state.regSecondsRemaining>0;
-  const target=inRegulation?state.regSecondsRemaining-quarterClock(state.regSecondsRemaining).seconds:null;
-  const otPeriod=state.ot?.period||1;
+  const startPhase=state.regSecondsRemaining>0?'REG':'OT';
+  const startQuarter=startPhase==='REG'?regulationQuarter(state.regSecondsRemaining):state.ot?.period||1;
   const out=[];
   for(let i=0;i<maxPossessions&&!state.final;i++){
-    out.push(advancePossession(state,{domain,replicate,record,stopAtQuarterBoundary:true}));
-    if(inRegulation ? state.regSecondsRemaining<=target : state.ot?.period!==otPeriod) return out;
+    out.push(advancePossession(state,{domain,replicate,record}));
+    if(startPhase==='REG'){
+      if(state.regSecondsRemaining===0)break;
+      if(regulationQuarter(state.regSecondsRemaining)!==startQuarter)break;
+    }else if(state.ot?.period!==startQuarter)break;
   }
-  demand(state.final,'quarter progression guard exceeded');
   return out;
 }
 
@@ -608,7 +574,7 @@ export function forecast(state,samples=250){
 }
 
 function gameplayStateForHash(state){
-  return{identity:state.identity,initial:state.initial,controls:state.controls,changes:state.changes,currentSide:state.currentSide,yardsToGoal:state.yardsToGoal,regSecondsRemaining:state.regSecondsRemaining,teamPossessions:state.teamPossessions,nextPossession:state.nextPossession,pendingDrive:state.pendingDrive,periodsStarted:state.periodsStarted,pausedAfterQuarter:state.pausedAfterQuarter,score:state.score,quarters:state.quarters,overtime:state.overtime,ot:state.ot,final:state.final,winner:state.winner,events:state.events};
+  return{identity:state.identity,initial:state.initial,controls:state.controls,changes:state.changes,currentSide:state.currentSide,yardsToGoal:state.yardsToGoal,regSecondsRemaining:state.regSecondsRemaining,teamPossessions:state.teamPossessions,nextPossession:state.nextPossession,score:state.score,quarters:state.quarters,overtime:state.overtime,ot:state.ot,final:state.final,winner:state.winner,events:state.events};
 }
 export function gameplayStateHash(state){return sha256(canonicalJSON(gameplayStateForHash(state)));}
 
