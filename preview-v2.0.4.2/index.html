@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <title>POWER CRUNCH v2.0.4.2 R1 Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <div><h1>OPERATION POWER CRUNCH</h1><p>v2.0.4.2 R1 possession prototype · Through Week 4 / Week 5 use</p></div>
+  <span class="badge">NOT PRODUCTION</span>
+</header>
+<nav>
+  <button data-tab="game" class="active">Game</button>
+  <button data-tab="ratings">Ratings</button>
+  <button data-tab="history">History</button>
+  <button data-tab="about">About</button>
+</nav>
+<section id="tab-game" class="tab active">
+  <section class="card" id="setupCard">
+    <div class="grid">
+      <label>Away<select id="away"></select></label>
+      <label>Home<select id="home"></select></label>
+      <label>Seed<input id="seed" inputmode="numeric"></label>
+      <label class="check"><input id="neutral" type="checkbox"> Neutral site</label>
+      <label>Temperature F<input id="temperature" type="number" value="70" min="-20" max="130"></label>
+      <label>Precipitation<select id="precipitation"><option value="none">None</option><option value="light">Light</option><option value="moderate">Moderate</option><option value="heavy">Heavy</option></select></label>
+      <label class="check"><input id="evenTeams" type="checkbox"> Even Teams</label>
+      <label>Strength Function<select id="prototype"><option value="A">Prototype A</option><option value="B">Prototype B</option></select></label>
+    </div>
+    <label><b>Live Advantage</b> <span id="advReadout">No adjustment</span></label>
+    <input id="manualLevel" type="range" min="-3" max="3" step="1" value="0">
+    <div class="ticks"><span>A +3</span><span>A +2</span><span>A +1</span><span>0</span><span>B +1</span><span>B +2</span><span>B +3</span></div>
+    <label class="check"><input id="comebackEnabled" type="checkbox"> Comeback Assist (Q3-Q4)</label>
+    <div class="actions"><button id="newSeed" class="secondary">New seed</button><button id="start">Start Game</button></div>
+  </section>
+
+  <section id="gameCard" class="card hidden">
+    <div id="pregame"></div>
+    <div class="score" id="scoreboard"></div>
+    <div class="status" id="status"></div>
+    <div class="actions sticky-actions">
+      <button id="playNext">Play Next Possession</button>
+      <button id="playQuarter">Play Quarter</button>
+      <button id="pause" class="secondary" disabled>Pause</button>
+      <button id="endGame" class="danger">End / New Game</button>
+    </div>
+    <details open><summary>Live transparency</summary><div id="transparency"></div></details>
+    <details><summary>Possession ledger</summary><div id="ledger" class="ledger"></div></details>
+  </section>
+</section>
+
+<section id="tab-ratings" class="tab"><section class="card"><h2>Week 5 Ratings</h2><p class="muted">Authoritative base TEAM/OFF/DEF values through Week 4. Runtime effective values never overwrite these rows.</p><div id="ratingsTable"></div></section></section>
+<section id="tab-history" class="tab"><section class="card"><div class="actions"><button id="exportHistory" class="secondary">Export history</button><button id="clearHistory" class="danger">Clear prototype history</button></div><div id="history"></div></section></section>
+<section id="tab-about" class="tab"><section class="card"><h2>v2.0.4.2 R1 Prototype</h2><p>This build is an assumption-governed possession-engine prototype. It is not an empirical-calibration claim and is not production.</p><p><b>Engine:</b> PC-MOBILE-v2.0.4.2-R1-PROTOTYPE<br><b>Data:</b> 2026-through-W04-for-W05-operator-ratings-v1<br><b>Ratings:</b> 121 canonical + 13 synthetic FCS = 134 teams<br><b>HFA:</b> 2.5 game-point prior; neutral 0<br><b>Storage:</b> isolated prototype history only</p><p>Prototype limitations: pooled special-teams probabilities, simplified field-position transitions, no onside/muffed-return possession exceptions, aggregate OT possessions, and no claim of historical calibration.</p></section></section>
+</main>
+<script type="module" src="app.mjs"></script>
+</body>
+</html>
