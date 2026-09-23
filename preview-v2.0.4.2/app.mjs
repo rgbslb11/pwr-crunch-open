@@ -17,7 +17,7 @@ export async function init(){
 }
 
 function fillTeams(){
-  const opts=teams.map(t=>`<option value="${esc(t.code)}">${esc(t.name)} (${esc(t.code)})</option>`).join('');
+  const opts=[...teams].sort((a,b)=>a.name.localeCompare(b.name,'en')).map(t=>`<option value="${esc(t.code)}">${esc(t.name)} (${esc(t.code)})</option>`).join('');
   $('away').innerHTML=opts;$('home').innerHTML=opts;$('away').value='TEX';$('home').value='UGA';
 }
 function newSeed(){const a=new Uint32Array(1);crypto.getRandomValues(a);$('seed').value=String(a[0]||1);}
