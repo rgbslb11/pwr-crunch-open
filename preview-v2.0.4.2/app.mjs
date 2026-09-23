@@ -1,16 +1,19 @@
 import {
   ENGINE_ID,DATA_ID,PARAMS,createGame,setLiveControls,advancePossession,forecast,exportAudit,replayAudit,
   driveProbabilities,pregamePrior,quarterClock,regulationQuarter,gameplayStateHash
-} from './engine_r1.mjs';
+} from './engine_r1.mjs?v=bootfix1';
 
 const STORE='powerCrunchAudit_PC2042_R1';
 const $=id=>document.getElementById(id);
 let rows=[],teams=[],state=null,lastForecast=null,playing=false,pauseRequested=false;
 
-async function init(){
-  rows=await fetch('./ratings.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('ratings load '+r.status);return r.json();});
+export async function init(){
+  rows=await fetch('./ratings.json?v=bootfix1',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('ratings load '+r.status);return r.json();});
   teams=rows.map(r=>({slot:r[0],code:r[1],name:r[2],conference:r[3],overall:r[4],offense:r[5],defense:r[6]}));
   fillTeams();renderRatings();renderHistory();wire();newSeed();updateAdvReadout();
+  $('setupControls').disabled=false;
+  $('startupStatus').textContent='Ready - 134 teams loaded. Select your matchup.';
+  document.documentElement.dataset.ready='true';
 }
 
 function fillTeams(){
@@ -76,4 +79,4 @@ function tick(ms){return new Promise(r=>setTimeout(r,ms))}
 function esc(x){return String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
 function showError(e){console.error(e);alert(e?.message||String(e));}
 
-init().catch(showError);
+
