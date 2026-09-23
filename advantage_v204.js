@@ -1,10 +1,10 @@
-// POWER CRUNCH v2.0.4 candidate — HFA 2.5 + reciprocal live strength prototypes A/B.
+// POWER CRUNCH v2.0.4 production — HFA 2.5 + reciprocal live strength prototypes A/B.
 (function(){
-const PRODUCT_VERSION='PC-MOBILE-v2.0.4-CANDIDATE';
+const PRODUCT_VERSION='PC-MOBILE-v2.0.4';
 const DATA_VERSION='2026-week4-canonical-ratings-v204-fcs60-ab-strength';
 const E=id=>document.getElementById(id);
 const CFG={
-  homeField:2.5,priorHomeField:2.2,neutralField:0,
+  homeField:2.5,priorHomeField:2.5,neutralField:0,
   advMin:-3,advMax:3,advStep:1,
   alphaA:0.006249633846986093,
   betaB:0.5,
