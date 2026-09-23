@@ -42,7 +42,7 @@ if(fcsSeen.size!==13)throw new Error('v2.0.4 FCS coverage mismatch: '+fcsSeen.si
 window.PC_RATING_MAP=D;
 window.PC_FCS_CODES=[...FCS];
 window.PC_CANONICAL_RANK=Object.fromEntries(Object.entries(D).map(([code,v])=>[code,v[3]]));
-window.PC_ENGINE_VERSION='PC-MOBILE-v2.0.4-CANDIDATE';
+window.PC_ENGINE_VERSION='PC-MOBILE-v2.0.4';
 window.PC_DATA_VERSION='2026-week4-canonical-ratings-v204-fcs60';
 window.PC_MODEL_NAME='Week 4 canonical TEAM/OFF/DEF ratings + FCS 60/60/60 + reciprocal live strength prototypes';
 window.PC_RATING_SOURCE='User-supplied 121-team v2.0.4 rating table';
