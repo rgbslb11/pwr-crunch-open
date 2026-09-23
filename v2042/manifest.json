@@ -1,0 +1,58 @@
+{
+  "status": "SPECIFICATION_AND_CONTRACT_TESTS_ONLY",
+  "target_release": "2.0.4.2",
+  "stage_version": "PC-2042-SPEC-R1",
+  "data_version": "2026-through-W04-for-W05-operator-ratings-v1",
+  "season": 2026,
+  "completed_through_week": 4,
+  "use_week": 5,
+  "baseline_commit": "824148200ef91a22a54fea91a49db1790fe43a66",
+  "baseline_ref": "release/v2.0.4",
+  "rows_file": "ratings.json",
+  "columns": [
+    "slot",
+    "code",
+    "name",
+    "conference",
+    "overall",
+    "offense",
+    "defense"
+  ],
+  "rows_file_sha256": "5598fbc95de623f282aea8c06a206a67acc351f98669c3d01409e75cf684c3e3",
+  "rating_tuples_sha256": "64be482ee81d4c3d437e48e7f552d3ea93bfa676e7c650424c619016ebb45fdd",
+  "hash_format": "ratings.json exact UTF-8 bytes, ASCII JSON escapes, LF; tuple hash JSON.stringify(rows.map(r=>[r[1],r[4],r[5],r[6],r[0]])), no trailing LF",
+  "authority": "Operator supplied 121 canonical rows and 13 FCS rows; confirmed through W4 for W5 in this conversation.",
+  "provenance_limit": "Hash proves integrity of this export, not the method that originally generated ratings.",
+  "upstream_workbook": null,
+  "upstream_rating_method": "NOT_ESTABLISHED; not required to change authoritative supplied values",
+  "canonical_count": 121,
+  "fcs_count": 13,
+  "total_count": 134,
+  "rating_fields": 402,
+  "fcs_codes": [
+    "ARST",
+    "CHAR",
+    "CP",
+    "DUQ",
+    "EMU",
+    "IDHO",
+    "SAC",
+    "SUU",
+    "TOL",
+    "ULL",
+    "ULM",
+    "WKU",
+    "WMU"
+  ],
+  "sources": {
+    "rating_blob_sha1": "b1a102c4c47ea246c1a6499fa4419e4178737ad7",
+    "conference_blob_sha1": "328837c0b90488d88f27c8e16124fbacda1f786b"
+  },
+  "identity_policy": "Diagnostic only; no forced OFF+DEF=2*TEAM correction.",
+  "alias_notes": [
+    "Hawaii -> Hawai\u2019i (HAW); same identity and values",
+    "Louisiana -> Louisiana (UL Lafayette) (ULL); same identity and values"
+  ],
+  "engine_connected": false,
+  "production_promoted": false
+}

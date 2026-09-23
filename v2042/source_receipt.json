@@ -1,0 +1,7 @@
+{
+  "source_commit": "824148200ef91a22a54fea91a49db1790fe43a66",
+  "file": "week4_power_v204.js",
+  "verified_git_blob_sha1": "b1a102c4c47ea246c1a6499fa4419e4178737ad7",
+  "sha256": "653ffc2fe1bcd2b3723fc881ddb541bd94d6cabd996a09e64be06bfb66c74605",
+  "method": "Exact content reconstructed locally and verified against GitHub-returned Git blob SHA before per-team comparisons."
+}

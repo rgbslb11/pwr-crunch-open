@@ -1,0 +1,87 @@
+{
+  "status": "DRAFT_NUMERICAL_SPEC_NOT_CALIBRATED",
+  "config_version": "PC-2042-CONTRACT-R1",
+  "approved_controls": {
+    "home_field_points": 2.5,
+    "neutral_field_points": 0,
+    "base_rating_min": 60,
+    "base_rating_max": 99,
+    "effective_rating_clamp": null,
+    "regulation_possessions_per_team_target": [
+      10,
+      13
+    ],
+    "prototype_A": {
+      "alpha": 0.006249633846986093
+    },
+    "prototype_B": {
+      "alpha_log_argument": 1.0189258,
+      "beta": 0.5
+    },
+    "slider_min": -3,
+    "slider_max": 3,
+    "manual_step": 1,
+    "default_prototype": "A",
+    "default_manual": 0,
+    "comeback": {
+      "default_enabled": false,
+      "q3_divisor": 10,
+      "q3_cap": 2,
+      "q4_divisor": 7,
+      "q4_cap": 3,
+      "combined_cap": 3,
+      "recompute": "before_each_possession",
+      "active_periods": [
+        3,
+        4
+      ]
+    },
+    "even_teams": "Pairwise-average base TEAM/OFF/DEF/tempo/run before live modifiers",
+    "pregame_lock": [
+      "away",
+      "home",
+      "seed",
+      "neutral",
+      "temperature",
+      "precipitation",
+      "evenTeams"
+    ],
+    "live_controls": [
+      "manualLevel",
+      "prototype",
+      "comebackEnabled"
+    ]
+  },
+  "legacy_reference_only": {
+    "margin_points_per_rating": 0.75,
+    "base_total": 54,
+    "quarter_sigma": 4.4,
+    "quarter_weights": [
+      0.24,
+      0.26,
+      0.24,
+      0.26
+    ],
+    "per_quarter_score_cap": 35,
+    "import_as_drive_defaults": false
+  },
+  "calibration": {
+    "overall_prior_bridge": null,
+    "unit_logit_coefficients": null,
+    "prior_penalty_strength": null,
+    "drive_outcome_baselines": null,
+    "drive_duration_field_transition_joint_model": null,
+    "special_teams_and_conversion_probabilities": null,
+    "weather_and_strategy_coefficients": null
+  },
+  "release_gates": {
+    "ratings_contract": false,
+    "numerical_spec_acceptance": false,
+    "empirical_calibration": false,
+    "rulebook_transition_tests": false,
+    "simulation_integration_tests": false,
+    "forecast_policy_tests": false,
+    "mobile_acceptance": false,
+    "operator_promotion": false
+  }
+}

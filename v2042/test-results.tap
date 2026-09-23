@@ -1,0 +1,226 @@
+TAP version 13
+# Subtest: C01 population: 121 canonical + 13 FCS = 134 / 402 values
+ok 1 - C01 population: 121 canonical + 13 FCS = 134 / 402 values
+  ---
+  duration_ms: 2.622975
+  type: 'test'
+  ...
+# Subtest: C02 exact match of all 363 canonical rating fields and 121 ranks to frozen Git blob
+ok 2 - C02 exact match of all 363 canonical rating fields and 121 ranks to frozen Git blob
+  ---
+  duration_ms: 2.002782
+  type: 'test'
+  ...
+# Subtest: C03 all 13 FCS individually match 60/60/60 and operator slots
+ok 3 - C03 all 13 FCS individually match 60/60/60 and operator slots
+  ---
+  duration_ms: 0.163706
+  type: 'test'
+  ...
+# Subtest: C04 exact-file SHA256 and rating-tuple SHA256 match manifest
+ok 4 - C04 exact-file SHA256 and rating-tuple SHA256 match manifest
+  ---
+  duration_ms: 0.263607
+  type: 'test'
+  ...
+# Subtest: C05 identity remains diagnostic: 56 exact / 35 minus-one / 30 plus-one
+ok 5 - C05 identity remains diagnostic: 56 exact / 35 minus-one / 30 plus-one
+  ---
+  duration_ms: 0.233461
+  type: 'test'
+  ...
+# Subtest: C06 duplicate team code rejected
+ok 6 - C06 duplicate team code rejected
+  ---
+  duration_ms: 0.793724
+  type: 'test'
+  ...
+# Subtest: C07 missing row rejected
+ok 7 - C07 missing row rejected
+  ---
+  duration_ms: 0.15979
+  type: 'test'
+  ...
+# Subtest: C08 invalid base rating, zero and NaN rejected
+ok 8 - C08 invalid base rating, zero and NaN rejected
+  ---
+  duration_ms: 0.534043
+  type: 'test'
+  ...
+# Subtest: C09 incorrect FCS value rejected
+ok 9 - C09 incorrect FCS value rejected
+  ---
+  duration_ms: 1.537743
+  type: 'test'
+  ...
+# Subtest: C10 supplied rank and FCS slot order must be preserved
+ok 10 - C10 supplied rank and FCS slot order must be preserved
+  ---
+  duration_ms: 1.440857
+  type: 'test'
+  ...
+# Subtest: C11 Prototype A retains frozen three multiplier values
+ok 11 - C11 Prototype A retains frozen three multiplier values
+  ---
+  duration_ms: 0.275985
+  type: 'test'
+  ...
+# Subtest: C12 Prototype B retains frozen three multiplier values
+ok 12 - C12 Prototype B retains frozen three multiplier values
+  ---
+  duration_ms: 0.103286
+  type: 'test'
+  ...
+# Subtest: C13 reciprocal product and sign-reversal symmetry for both prototypes/all six nonzero settings
+ok 13 - C13 reciprocal product and sign-reversal symmetry for both prototypes/all six nonzero settings
+  ---
+  duration_ms: 0.986363
+  type: 'test'
+  ...
+# Subtest: C14 Even Teams equalizes base units and style BEFORE manual influence
+ok 14 - C14 Even Teams equalizes base units and style BEFORE manual influence
+  ---
+  duration_ms: 0.119891
+  type: 'test'
+  ...
+# Subtest: C15 temporary elite effective ratings may exceed 100
+ok 15 - C15 temporary elite effective ratings may exceed 100
+  ---
+  duration_ms: 0.065439
+  type: 'test'
+  ...
+# Subtest: C16 reciprocal penalty can take effective FCS below 60 without changing base
+ok 16 - C16 reciprocal penalty can take effective FCS below 60 without changing base
+  ---
+  duration_ms: 0.081653
+  type: 'test'
+  ...
+# Subtest: C17 effective-rating calculations never mutate authoritative teams or controls
+ok 17 - C17 effective-rating calculations never mutate authoritative teams or controls
+  ---
+  duration_ms: 0.193401
+  type: 'test'
+  ...
+# Subtest: C18 both prototypes at zero produce identical base values
+ok 18 - C18 both prototypes at zero produce identical base values
+  ---
+  duration_ms: 0.100932
+  type: 'test'
+  ...
+# Subtest: C19 comeback is dormant Q1/Q2/OT and when tied
+ok 19 - C19 comeback is dormant Q1/Q2/OT and when tied
+  ---
+  duration_ms: 0.102294
+  type: 'test'
+  ...
+# Subtest: C20 Q3 fourteen-point deficit is fractional 1.4, not rounded
+ok 20 - C20 Q3 fourteen-point deficit is fractional 1.4, not rounded
+  ---
+  duration_ms: 0.185114
+  type: 'test'
+  ...
+# Subtest: C21 Q4 fourteen-point deficit gives 2; twenty-one gives 3
+ok 21 - C21 Q4 fourteen-point deficit gives 2; twenty-one gives 3
+  ---
+  duration_ms: 0.168814
+  type: 'test'
+  ...
+# Subtest: C22 comeback decays from updated possession-boundary score
+ok 22 - C22 comeback decays from updated possession-boundary score
+  ---
+  duration_ms: 0.158279
+  type: 'test'
+  ...
+# Subtest: C23 maxed manual slider reports discarded additional assistance
+ok 23 - C23 maxed manual slider reports discarded additional assistance
+  ---
+  duration_ms: 0.202385
+  type: 'test'
+  ...
+# Subtest: C24 opposite manual and comeback influences combine in signed levels
+ok 24 - C24 opposite manual and comeback influences combine in signed levels
+  ---
+  duration_ms: 0.133942
+  type: 'test'
+  ...
+# Subtest: C25 site contract returns HFA 2.5 or exactly zero on neutral
+ok 25 - C25 site contract returns HFA 2.5 or exactly zero on neutral
+  ---
+  duration_ms: 0.153762
+  type: 'test'
+  ...
+# Subtest: C26 drive features retain actual opposing DEF without hidden overall double-count
+ok 26 - C26 drive features retain actual opposing DEF without hidden overall double-count
+  ---
+  duration_ms: 0.208994
+  type: 'test'
+  ...
+# Subtest: C27 stable seed event-key golden vector (NOT a legacy final-score assertion)
+ok 27 - C27 stable seed event-key golden vector (NOT a legacy final-score assertion)
+  ---
+  duration_ms: 0.374994
+  type: 'test'
+  ...
+# Subtest: C28 forecast calls do not consume or alter game randomness
+ok 28 - C28 forecast calls do not consume or alter game randomness
+  ---
+  duration_ms: 1.099213
+  type: 'test'
+  ...
+# Subtest: C29 extra unrelated events cannot shift a later addressed event
+ok 29 - C29 extra unrelated events cannot shift a later addressed event
+  ---
+  duration_ms: 0.194683
+  type: 'test'
+  ...
+# Subtest: C30 RNG rejects invalid keys and preserves uint32 endpoints
+ok 30 - C30 RNG rejects invalid keys and preserves uint32 endpoints
+  ---
+  duration_ms: 0.380603
+  type: 'test'
+  ...
+# Subtest: C31 settings changes have chronological sequence and next-possession boundary
+ok 31 - C31 settings changes have chronological sequence and next-possession boundary
+  ---
+  duration_ms: 0.283436
+  type: 'test'
+  ...
+# Subtest: C32 locked pregame changes and unknown controls rejected
+ok 32 - C32 locked pregame changes and unknown controls rejected
+  ---
+  duration_ms: 0.241513
+  type: 'test'
+  ...
+# Subtest: C33 finalized game refuses intervention
+ok 33 - C33 finalized game refuses intervention
+  ---
+  duration_ms: 0.140452
+  type: 'test'
+  ...
+# Subtest: C34 exact replay requires all archived settings and matching five-part identity
+ok 34 - C34 exact replay requires all archived settings and matching five-part identity
+  ---
+  duration_ms: 0.845331
+  type: 'test'
+  ...
+# Subtest: C35 changed archive content is not an exact replay
+ok 35 - C35 changed archive content is not an exact replay
+  ---
+  duration_ms: 0.279781
+  type: 'test'
+  ...
+# Subtest: C36 missing empirical parameters explicitly block a playable simulation
+ok 36 - C36 missing empirical parameters explicitly block a playable simulation
+  ---
+  duration_ms: 0.250397
+  type: 'test'
+  ...
+1..36
+# tests 36
+# suites 0
+# pass 36
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 94.313119
