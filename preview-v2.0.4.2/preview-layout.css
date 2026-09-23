@@ -1,0 +1,21 @@
+/* Layout adapters for the possession controls. Colors come from the exact v2.0.4 stylesheet. */
+fieldset{border:0;padding:0;margin:0;min-width:0}
+button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.actions button{flex:1;min-width:130px;margin-top:0}
+#manualLevel{width:100%;padding:0;accent-color:var(--accent)}
+.check input{accent-color:var(--accent)}
+.ticks{display:grid;grid-template-columns:repeat(7,1fr);font-size:.7rem;text-align:center;color:var(--muted);margin-bottom:12px}
+#scoreboard{grid-template-columns:minmax(64px,1fr) repeat(6,minmax(28px,42px))}
+#scoreboard .team{text-align:left;font-weight:800}
+.status{padding:10px 0;margin:10px 0}
+.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.metric{min-width:0}.metric b{overflow-wrap:anywhere}
+.drive strong{display:block;margin-top:3px}
+.rating-table{display:grid;gap:5px}
+.rating-row{display:grid;grid-template-columns:48px 1fr repeat(3,45px);gap:6px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.rating-row span:nth-last-child(-n+3){text-align:right;font-variant-numeric:tabular-nums}
+.json{white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem}
+.sticky-actions{position:sticky;bottom:0;background:var(--panel);padding:8px 0;z-index:3}
+#startupStatus{margin:0 0 12px}#startupStatus[data-error]{color:var(--accent);font-weight:700}
+@media(max-width:520px){.metrics{grid-template-columns:1fr}.rating-row{grid-template-columns:34px 1fr repeat(3,30px);font-size:13px}#scoreboard{font-size:13px;grid-template-columns:minmax(52px,1fr) repeat(6,minmax(26px,34px))}}
