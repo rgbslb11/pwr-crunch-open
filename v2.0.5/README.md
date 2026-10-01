@@ -4,7 +4,9 @@ This build updates the alphabetized QUARTERFIX1 possession simulator with the op
 
 ## Open the simulator
 
-Hosted build: https://rgbslb11.github.io/pwr-crunch-open/v2.0.5/
+Publishing is pending approval in PR #10: https://github.com/rgbslb11/pwr-crunch-open/pull/10
+
+The intended hosted URL after deployment is https://rgbslb11.github.io/pwr-crunch-open/v2.0.5/. It has not been published or verified live. Automatic approval review blocked merging to main because the Pages workflow deploys on that branch and the standing handoff requires separate production-promotion approval.
 
 For the exported copy, extract the ZIP, open a terminal in this folder, and run:
 
