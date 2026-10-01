@@ -1,0 +1,18 @@
+{
+  "README.md": "4cfb9c7fabe4fb98c2615128a02b29e3dbd6357225317483a4d4fe235e423184",
+  "app.mjs": "53dc736f75512fc7e530f5ee1570e9c942e2dad0b36a635340491f54730d9a42",
+  "bootstrap.mjs": "ed28981dc0a9bcb1316dd73de265e4db15ad2b14bdf086f3ff68d65176b05553",
+  "engine_r1.mjs": "77481420b38cb41609d77993de705e6eda8a68e3c58b048185e12c2c6927fdd2",
+  "history-v2042/engine_quarterfix1.mjs": "643072381ece90f022e0951e0a8693269e95e8d7222c5262931497bda57433f8",
+  "history-v2042/engine_r1_legacy.mjs": "e8b8249b6a3b319a3e37e164f951acb109c4ba0789c789d38def8a9238b74f2d",
+  "history-v2042/ratings.json": "5598fbc95de623f282aea8c06a206a67acc351f98669c3d01409e75cf684c3e3",
+  "index.html": "42c766f17e3aeb9f57adb409b1500e7dce0f9c2ba7d873ed70b752ea1467ada3",
+  "preview-layout.css": "9896cdbd715dd5736add7b0a80b273378f4a0006c86794caca561b18ccee5b28",
+  "quarter_boundary.test.mjs": "67b8a7554822219676ddce9d37c040e23af3a1e7bd0d1b86b05f9fd21a3f9a21",
+  "ratings-update.json": "57ede3d3042b495c11b72dd49dd81deb628480ac8c46ba02a5be2c60e2e09403",
+  "ratings.json": "fb3b6ef88bbcd2bd7d33149bac99f10167eff6b6598579d6ffe79426f5d22ac0",
+  "replay_router.mjs": "5273920480ec9aacecacea1611bdd5cb42034e4dd6eb41354a958a32e8866416",
+  "source/team-ratings-121.csv": "85ed1ccbcb87f2b20228a6667fc2e82e0f62291e560bd85f4dbe844870266cd9",
+  "style.css": "15c24a26d9f9f1f0e75e8756f02f0f3cd6d8b2f2a865ff78199388022743f4de",
+  "week6_ratings.test.mjs": "83aeed48c14e59e8d58a545524fe132df00fea8fe31e5ae8eecb888967dae64b"
+}
