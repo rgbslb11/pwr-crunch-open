@@ -1,0 +1,970 @@
+[
+  {
+    "rank": 1,
+    "name": "Georgia",
+    "code": "UGA",
+    "TEAM": 99,
+    "OFF": 99,
+    "DEF": 99
+  },
+  {
+    "rank": 2,
+    "name": "Ohio State",
+    "code": "OSU",
+    "TEAM": 99,
+    "OFF": 99,
+    "DEF": 99
+  },
+  {
+    "rank": 3,
+    "name": "Texas Tech",
+    "code": "TTU",
+    "TEAM": 98,
+    "OFF": 98,
+    "DEF": 98
+  },
+  {
+    "rank": 4,
+    "name": "Miami",
+    "code": "MIA",
+    "TEAM": 98,
+    "OFF": 98,
+    "DEF": 98
+  },
+  {
+    "rank": 5,
+    "name": "Notre Dame",
+    "code": "ND",
+    "TEAM": 98,
+    "OFF": 99,
+    "DEF": 97
+  },
+  {
+    "rank": 6,
+    "name": "LSU",
+    "code": "LSU",
+    "TEAM": 97,
+    "OFF": 98,
+    "DEF": 96
+  },
+  {
+    "rank": 7,
+    "name": "Alabama",
+    "code": "ALA",
+    "TEAM": 97,
+    "OFF": 99,
+    "DEF": 95
+  },
+  {
+    "rank": 8,
+    "name": "Ole Miss",
+    "code": "MISS",
+    "TEAM": 97,
+    "OFF": 98,
+    "DEF": 96
+  },
+  {
+    "rank": 9,
+    "name": "Indiana",
+    "code": "IU",
+    "TEAM": 96,
+    "OFF": 95,
+    "DEF": 97
+  },
+  {
+    "rank": 10,
+    "name": "Utah",
+    "code": "UTAH",
+    "TEAM": 96,
+    "OFF": 97,
+    "DEF": 95
+  },
+  {
+    "rank": 11,
+    "name": "Texas",
+    "code": "TEX",
+    "TEAM": 96,
+    "OFF": 96,
+    "DEF": 96
+  },
+  {
+    "rank": 12,
+    "name": "Tennessee",
+    "code": "TENN",
+    "TEAM": 95,
+    "OFF": 94,
+    "DEF": 96
+  },
+  {
+    "rank": 13,
+    "name": "Arizona",
+    "code": "ARIZ",
+    "TEAM": 95,
+    "OFF": 95,
+    "DEF": 95
+  },
+  {
+    "rank": 14,
+    "name": "Oregon",
+    "code": "ORE",
+    "TEAM": 95,
+    "OFF": 94,
+    "DEF": 96
+  },
+  {
+    "rank": 15,
+    "name": "BYU",
+    "code": "BYU",
+    "TEAM": 94,
+    "OFF": 92,
+    "DEF": 96
+  },
+  {
+    "rank": 16,
+    "name": "Iowa",
+    "code": "IOWA",
+    "TEAM": 94,
+    "OFF": 93,
+    "DEF": 95
+  },
+  {
+    "rank": 17,
+    "name": "Oklahoma",
+    "code": "OU",
+    "TEAM": 94,
+    "OFF": 93,
+    "DEF": 95
+  },
+  {
+    "rank": 18,
+    "name": "Houston",
+    "code": "HOU",
+    "TEAM": 93,
+    "OFF": 94,
+    "DEF": 92
+  },
+  {
+    "rank": 19,
+    "name": "Wake Forest",
+    "code": "WAKE",
+    "TEAM": 93,
+    "OFF": 94,
+    "DEF": 92
+  },
+  {
+    "rank": 20,
+    "name": "USC",
+    "code": "USC",
+    "TEAM": 93,
+    "OFF": 94,
+    "DEF": 92
+  },
+  {
+    "rank": 21,
+    "name": "UCLA",
+    "code": "UCLA",
+    "TEAM": 93,
+    "OFF": 93,
+    "DEF": 93
+  },
+  {
+    "rank": 22,
+    "name": "Kentucky",
+    "code": "UK",
+    "TEAM": 92,
+    "OFF": 93,
+    "DEF": 91
+  },
+  {
+    "rank": 23,
+    "name": "SMU",
+    "code": "SMU",
+    "TEAM": 92,
+    "OFF": 90,
+    "DEF": 94
+  },
+  {
+    "rank": 24,
+    "name": "Texas A&M",
+    "code": "TA&M",
+    "TEAM": 92,
+    "OFF": 91,
+    "DEF": 93
+  },
+  {
+    "rank": 25,
+    "name": "Auburn",
+    "code": "AUB",
+    "TEAM": 91,
+    "OFF": 91,
+    "DEF": 91
+  },
+  {
+    "rank": 26,
+    "name": "Michigan",
+    "code": "MICH",
+    "TEAM": 91,
+    "OFF": 89,
+    "DEF": 93
+  },
+  {
+    "rank": 27,
+    "name": "Memphis",
+    "code": "MEM",
+    "TEAM": 91,
+    "OFF": 92,
+    "DEF": 90
+  },
+  {
+    "rank": 28,
+    "name": "Northwestern",
+    "code": "NU",
+    "TEAM": 90,
+    "OFF": 90,
+    "DEF": 90
+  },
+  {
+    "rank": 29,
+    "name": "Louisville",
+    "code": "LOU",
+    "TEAM": 90,
+    "OFF": 90,
+    "DEF": 90
+  },
+  {
+    "rank": 30,
+    "name": "Missouri",
+    "code": "MIZ",
+    "TEAM": 90,
+    "OFF": 89,
+    "DEF": 91
+  },
+  {
+    "rank": 31,
+    "name": "Lehigh",
+    "code": "LEH",
+    "TEAM": 89,
+    "OFF": 89,
+    "DEF": 89
+  },
+  {
+    "rank": 32,
+    "name": "Oregon State",
+    "code": "ORST",
+    "TEAM": 89,
+    "OFF": 91,
+    "DEF": 87
+  },
+  {
+    "rank": 33,
+    "name": "Nebraska",
+    "code": "NEB",
+    "TEAM": 89,
+    "OFF": 90,
+    "DEF": 88
+  },
+  {
+    "rank": 34,
+    "name": "Florida State",
+    "code": "FSU",
+    "TEAM": 88,
+    "OFF": 90,
+    "DEF": 86
+  },
+  {
+    "rank": 35,
+    "name": "Duke",
+    "code": "DUKE",
+    "TEAM": 88,
+    "OFF": 86,
+    "DEF": 90
+  },
+  {
+    "rank": 36,
+    "name": "UCF",
+    "code": "UCF",
+    "TEAM": 88,
+    "OFF": 86,
+    "DEF": 90
+  },
+  {
+    "rank": 37,
+    "name": "Illinois",
+    "code": "ILL",
+    "TEAM": 87,
+    "OFF": 87,
+    "DEF": 87
+  },
+  {
+    "rank": 38,
+    "name": "Vanderbilt",
+    "code": "VAN",
+    "TEAM": 87,
+    "OFF": 89,
+    "DEF": 85
+  },
+  {
+    "rank": 39,
+    "name": "Mississippi State",
+    "code": "MSST",
+    "TEAM": 87,
+    "OFF": 87,
+    "DEF": 87
+  },
+  {
+    "rank": 40,
+    "name": "Florida",
+    "code": "FLA",
+    "TEAM": 86,
+    "OFF": 88,
+    "DEF": 84
+  },
+  {
+    "rank": 41,
+    "name": "Penn State",
+    "code": "PSU",
+    "TEAM": 86,
+    "OFF": 86,
+    "DEF": 86
+  },
+  {
+    "rank": 42,
+    "name": "Washington",
+    "code": "WASH",
+    "TEAM": 86,
+    "OFF": 86,
+    "DEF": 86
+  },
+  {
+    "rank": 43,
+    "name": "North Carolina",
+    "code": "UNC",
+    "TEAM": 85,
+    "OFF": 84,
+    "DEF": 86
+  },
+  {
+    "rank": 44,
+    "name": "Boise State",
+    "code": "BOISE",
+    "TEAM": 85,
+    "OFF": 87,
+    "DEF": 83
+  },
+  {
+    "rank": 45,
+    "name": "Virginia",
+    "code": "UVA",
+    "TEAM": 85,
+    "OFF": 85,
+    "DEF": 85
+  },
+  {
+    "rank": 46,
+    "name": "Oklahoma State",
+    "code": "OKST",
+    "TEAM": 84,
+    "OFF": 84,
+    "DEF": 84
+  },
+  {
+    "rank": 47,
+    "name": "Georgia State",
+    "code": "GAST",
+    "TEAM": 84,
+    "OFF": 85,
+    "DEF": 83
+  },
+  {
+    "rank": 48,
+    "name": "TCU",
+    "code": "TCU",
+    "TEAM": 84,
+    "OFF": 82,
+    "DEF": 86
+  },
+  {
+    "rank": 49,
+    "name": "Michigan State",
+    "code": "MSU",
+    "TEAM": 83,
+    "OFF": 82,
+    "DEF": 84
+  },
+  {
+    "rank": 50,
+    "name": "Holy Cross",
+    "code": "HC",
+    "TEAM": 83,
+    "OFF": 83,
+    "DEF": 83
+  },
+  {
+    "rank": 51,
+    "name": "Colgate",
+    "code": "COLG",
+    "TEAM": 83,
+    "OFF": 84,
+    "DEF": 82
+  },
+  {
+    "rank": 52,
+    "name": "Cincinnati",
+    "code": "CIN",
+    "TEAM": 82,
+    "OFF": 82,
+    "DEF": 82
+  },
+  {
+    "rank": 53,
+    "name": "Wisconsin",
+    "code": "WIS",
+    "TEAM": 82,
+    "OFF": 80,
+    "DEF": 84
+  },
+  {
+    "rank": 54,
+    "name": "Purdue",
+    "code": "PUR",
+    "TEAM": 82,
+    "OFF": 83,
+    "DEF": 81
+  },
+  {
+    "rank": 55,
+    "name": "South Florida",
+    "code": "USF",
+    "TEAM": 81,
+    "OFF": 81,
+    "DEF": 81
+  },
+  {
+    "rank": 56,
+    "name": "South Carolina",
+    "code": "SC",
+    "TEAM": 81,
+    "OFF": 81,
+    "DEF": 81
+  },
+  {
+    "rank": 57,
+    "name": "Clemson",
+    "code": "CLEM",
+    "TEAM": 81,
+    "OFF": 81,
+    "DEF": 81
+  },
+  {
+    "rank": 58,
+    "name": "Pittsburgh",
+    "code": "PITT",
+    "TEAM": 80,
+    "OFF": 80,
+    "DEF": 80
+  },
+  {
+    "rank": 59,
+    "name": "Georgia Tech",
+    "code": "GT",
+    "TEAM": 80,
+    "OFF": 79,
+    "DEF": 81
+  },
+  {
+    "rank": 60,
+    "name": "Iowa State",
+    "code": "ISU",
+    "TEAM": 80,
+    "OFF": 80,
+    "DEF": 80
+  },
+  {
+    "rank": 61,
+    "name": "New Mexico",
+    "code": "NM",
+    "TEAM": 80,
+    "OFF": 79,
+    "DEF": 81
+  },
+  {
+    "rank": 62,
+    "name": "Kansas State",
+    "code": "KSU",
+    "TEAM": 79,
+    "OFF": 79,
+    "DEF": 79
+  },
+  {
+    "rank": 63,
+    "name": "Arkansas",
+    "code": "ARK",
+    "TEAM": 79,
+    "OFF": 78,
+    "DEF": 80
+  },
+  {
+    "rank": 64,
+    "name": "Army",
+    "code": "ARMY",
+    "TEAM": 79,
+    "OFF": 78,
+    "DEF": 80
+  },
+  {
+    "rank": 65,
+    "name": "North Dakota State",
+    "code": "NDSU",
+    "TEAM": 78,
+    "OFF": 79,
+    "DEF": 77
+  },
+  {
+    "rank": 66,
+    "name": "Baylor",
+    "code": "BAY",
+    "TEAM": 78,
+    "OFF": 77,
+    "DEF": 79
+  },
+  {
+    "rank": 67,
+    "name": "Virginia Tech",
+    "code": "VT",
+    "TEAM": 78,
+    "OFF": 79,
+    "DEF": 77
+  },
+  {
+    "rank": 68,
+    "name": "West Virginia",
+    "code": "WVU",
+    "TEAM": 77,
+    "OFF": 79,
+    "DEF": 75
+  },
+  {
+    "rank": 69,
+    "name": "Tulane",
+    "code": "TLN",
+    "TEAM": 77,
+    "OFF": 78,
+    "DEF": 76
+  },
+  {
+    "rank": 70,
+    "name": "Colorado",
+    "code": "COLO",
+    "TEAM": 77,
+    "OFF": 75,
+    "DEF": 79
+  },
+  {
+    "rank": 71,
+    "name": "Minnesota",
+    "code": "MINN",
+    "TEAM": 76,
+    "OFF": 76,
+    "DEF": 76
+  },
+  {
+    "rank": 72,
+    "name": "Penn",
+    "code": "PENN",
+    "TEAM": 76,
+    "OFF": 76,
+    "DEF": 76
+  },
+  {
+    "rank": 73,
+    "name": "North Texas",
+    "code": "UNT",
+    "TEAM": 76,
+    "OFF": 77,
+    "DEF": 75
+  },
+  {
+    "rank": 74,
+    "name": "UConn",
+    "code": "UConn",
+    "TEAM": 75,
+    "OFF": 77,
+    "DEF": 73
+  },
+  {
+    "rank": 75,
+    "name": "California",
+    "code": "CAL",
+    "TEAM": 75,
+    "OFF": 75,
+    "DEF": 75
+  },
+  {
+    "rank": 76,
+    "name": "NC State",
+    "code": "NCSU",
+    "TEAM": 75,
+    "OFF": 75,
+    "DEF": 75
+  },
+  {
+    "rank": 77,
+    "name": "Utah State",
+    "code": "USU",
+    "TEAM": 74,
+    "OFF": 73,
+    "DEF": 75
+  },
+  {
+    "rank": 78,
+    "name": "UNLV",
+    "code": "UNLV",
+    "TEAM": 74,
+    "OFF": 74,
+    "DEF": 74
+  },
+  {
+    "rank": 79,
+    "name": "Air Force",
+    "code": "AF",
+    "TEAM": 74,
+    "OFF": 75,
+    "DEF": 73
+  },
+  {
+    "rank": 80,
+    "name": "Florida Atlantic",
+    "code": "FAU",
+    "TEAM": 73,
+    "OFF": 73,
+    "DEF": 73
+  },
+  {
+    "rank": 81,
+    "name": "Syracuse",
+    "code": "SYR",
+    "TEAM": 73,
+    "OFF": 75,
+    "DEF": 71
+  },
+  {
+    "rank": 82,
+    "name": "Maryland",
+    "code": "MD",
+    "TEAM": 73,
+    "OFF": 74,
+    "DEF": 72
+  },
+  {
+    "rank": 83,
+    "name": "Boston College",
+    "code": "BC",
+    "TEAM": 72,
+    "OFF": 70,
+    "DEF": 74
+  },
+  {
+    "rank": 84,
+    "name": "Fresno State",
+    "code": "FRES",
+    "TEAM": 72,
+    "OFF": 71,
+    "DEF": 73
+  },
+  {
+    "rank": 85,
+    "name": "Troy",
+    "code": "TROY",
+    "TEAM": 72,
+    "OFF": 70,
+    "DEF": 74
+  },
+  {
+    "rank": 86,
+    "name": "UTSA",
+    "code": "UTSA",
+    "TEAM": 71,
+    "OFF": 73,
+    "DEF": 69
+  },
+  {
+    "rank": 87,
+    "name": "Louisiana Tech",
+    "code": "LT",
+    "TEAM": 71,
+    "OFF": 71,
+    "DEF": 71
+  },
+  {
+    "rank": 88,
+    "name": "Navy",
+    "code": "NAVY",
+    "TEAM": 71,
+    "OFF": 69,
+    "DEF": 73
+  },
+  {
+    "rank": 89,
+    "name": "Texas State",
+    "code": "TXST",
+    "TEAM": 70,
+    "OFF": 72,
+    "DEF": 68
+  },
+  {
+    "rank": 90,
+    "name": "Washington State",
+    "code": "WSU",
+    "TEAM": 70,
+    "OFF": 70,
+    "DEF": 70
+  },
+  {
+    "rank": 91,
+    "name": "Kansas",
+    "code": "KU",
+    "TEAM": 70,
+    "OFF": 70,
+    "DEF": 70
+  },
+  {
+    "rank": 92,
+    "name": "Tulsa",
+    "code": "TLSA",
+    "TEAM": 69,
+    "OFF": 68,
+    "DEF": 70
+  },
+  {
+    "rank": 93,
+    "name": "San Jose State",
+    "code": "SJSU",
+    "TEAM": 69,
+    "OFF": 68,
+    "DEF": 70
+  },
+  {
+    "rank": 94,
+    "name": "Princeton",
+    "code": "PRIN",
+    "TEAM": 69,
+    "OFF": 70,
+    "DEF": 68
+  },
+  {
+    "rank": 95,
+    "name": "Arizona State",
+    "code": "ASU",
+    "TEAM": 68,
+    "OFF": 70,
+    "DEF": 66
+  },
+  {
+    "rank": 96,
+    "name": "Temple",
+    "code": "TEM",
+    "TEAM": 68,
+    "OFF": 67,
+    "DEF": 69
+  },
+  {
+    "rank": 97,
+    "name": "Yale",
+    "code": "YALE",
+    "TEAM": 68,
+    "OFF": 68,
+    "DEF": 68
+  },
+  {
+    "rank": 98,
+    "name": "Delaware",
+    "code": "DEL",
+    "TEAM": 67,
+    "OFF": 66,
+    "DEF": 68
+  },
+  {
+    "rank": 99,
+    "name": "UAB",
+    "code": "UAB",
+    "TEAM": 67,
+    "OFF": 67,
+    "DEF": 67
+  },
+  {
+    "rank": 100,
+    "name": "San Diego State",
+    "code": "SDSU",
+    "TEAM": 67,
+    "OFF": 67,
+    "DEF": 67
+  },
+  {
+    "rank": 101,
+    "name": "Rutgers",
+    "code": "RUTG",
+    "TEAM": 67,
+    "OFF": 68,
+    "DEF": 66
+  },
+  {
+    "rank": 102,
+    "name": "Colorado State",
+    "code": "CSU",
+    "TEAM": 66,
+    "OFF": 68,
+    "DEF": 64
+  },
+  {
+    "rank": 103,
+    "name": "East Carolina",
+    "code": "ECU",
+    "TEAM": 66,
+    "OFF": 65,
+    "DEF": 67
+  },
+  {
+    "rank": 104,
+    "name": "Cornell",
+    "code": "COR",
+    "TEAM": 66,
+    "OFF": 67,
+    "DEF": 65
+  },
+  {
+    "rank": 105,
+    "name": "Old Dominion",
+    "code": "ODU",
+    "TEAM": 65,
+    "OFF": 63,
+    "DEF": 67
+  },
+  {
+    "rank": 106,
+    "name": "Florida International",
+    "code": "FIU",
+    "TEAM": 65,
+    "OFF": 63,
+    "DEF": 67
+  },
+  {
+    "rank": 107,
+    "name": "Marshall",
+    "code": "MRSH",
+    "TEAM": 65,
+    "OFF": 65,
+    "DEF": 65
+  },
+  {
+    "rank": 108,
+    "name": "Buffalo",
+    "code": "BUFF",
+    "TEAM": 64,
+    "OFF": 64,
+    "DEF": 64
+  },
+  {
+    "rank": 109,
+    "name": "Southern Miss",
+    "code": "USM",
+    "TEAM": 64,
+    "OFF": 65,
+    "DEF": 63
+  },
+  {
+    "rank": 110,
+    "name": "Nevada",
+    "code": "NEV",
+    "TEAM": 64,
+    "OFF": 64,
+    "DEF": 64
+  },
+  {
+    "rank": 111,
+    "name": "Harvard",
+    "code": "HARV",
+    "TEAM": 63,
+    "OFF": 63,
+    "DEF": 63
+  },
+  {
+    "rank": 112,
+    "name": "Coastal Carolina",
+    "code": "CCU",
+    "TEAM": 63,
+    "OFF": 62,
+    "DEF": 64
+  },
+  {
+    "rank": 113,
+    "name": "Stanford",
+    "code": "STAN",
+    "TEAM": 63,
+    "OFF": 65,
+    "DEF": 61
+  },
+  {
+    "rank": 114,
+    "name": "Northern Illinois",
+    "code": "NIU",
+    "TEAM": 62,
+    "OFF": 61,
+    "DEF": 63
+  },
+  {
+    "rank": 115,
+    "name": "Middle Tennessee",
+    "code": "MTSU",
+    "TEAM": 62,
+    "OFF": 62,
+    "DEF": 62
+  },
+  {
+    "rank": 116,
+    "name": "Wyoming",
+    "code": "WYO",
+    "TEAM": 62,
+    "OFF": 62,
+    "DEF": 62
+  },
+  {
+    "rank": 117,
+    "name": "Hawaii",
+    "code": "HAW",
+    "TEAM": 61,
+    "OFF": 60,
+    "DEF": 62
+  },
+  {
+    "rank": 118,
+    "name": "New Mexico State",
+    "code": "NMSU",
+    "TEAM": 61,
+    "OFF": 60,
+    "DEF": 62
+  },
+  {
+    "rank": 119,
+    "name": "Georgia Southern",
+    "code": "GASO",
+    "TEAM": 61,
+    "OFF": 61,
+    "DEF": 61
+  },
+  {
+    "rank": 120,
+    "name": "Rice",
+    "code": "RICE",
+    "TEAM": 60,
+    "OFF": 60,
+    "DEF": 60
+  },
+  {
+    "rank": 121,
+    "name": "UTEP",
+    "code": "UTEP",
+    "TEAM": 60,
+    "OFF": 60,
+    "DEF": 60
+  }
+]

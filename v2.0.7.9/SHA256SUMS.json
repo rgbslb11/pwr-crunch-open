@@ -1,0 +1,23 @@
+{
+  "README.md": "888079f3540a49bd9f2422b2e8e404148b2e9ef8a64251d3dcae59bdd62f5379",
+  "app.mjs": "665979f588a4bcba87ac3c95b4631270fd24bb4444b4b7689d771b02ec6430ba",
+  "bootstrap.mjs": "8d294f0bffc9a07c7e38dce5d56bcab8c1e8991edb1265e8ccfadbf1861e2eea",
+  "engine_r1.mjs": "6165c4199b9168c58e29f71f3dfe6230639c821cd5bee74a52dc188cd95a21e3",
+  "history-v2042/engine_quarterfix1.mjs": "643072381ece90f022e0951e0a8693269e95e8d7222c5262931497bda57433f8",
+  "history-v2042/engine_r1_legacy.mjs": "e8b8249b6a3b319a3e37e164f951acb109c4ba0789c789d38def8a9238b74f2d",
+  "history-v2042/ratings.json": "5598fbc95de623f282aea8c06a206a67acc351f98669c3d01409e75cf684c3e3",
+  "history-v205/engine_r1.mjs": "77481420b38cb41609d77993de705e6eda8a68e3c58b048185e12c2c6927fdd2",
+  "history-v205/ratings.json": "fb3b6ef88bbcd2bd7d33149bac99f10167eff6b6598579d6ffe79426f5d22ac0",
+  "history-v206/engine_r1.mjs": "a493774b493897fa5951309ed4e49668ec271982b318b2ff34ce9d92751e61ed",
+  "history-v206/ratings.json": "538263f4dbebc9b0a678c0cb55d5e14007d4f01d732f3dd154456bbb407c310d",
+  "index.html": "27215f2e5ced8ab3837a8e6135ab3b5975ed46e455fac250bd866fca828409a6",
+  "preview-layout.css": "9896cdbd715dd5736add7b0a80b273378f4a0006c86794caca561b18ccee5b28",
+  "quarter_boundary.test.mjs": "766faa19e8969a4b1ddd43eabffd78e381e3eebcff870f4ffa09c4c0d687a1f0",
+  "ratings-update.json": "d40ce87bc3e3778937aad0ef0105289f736519be43614a6c70a857a96984ff66",
+  "ratings.json": "f9d88687677f7c2ab64142b0635aefd3b94aee9f6568cbf08078abe67d30beec",
+  "replay_router.mjs": "ec9ddc298e5f281e3646928ae364e4ed8d981f2003da3d3114ddae3df1b46978",
+  "source/approved-ratings.json": "4821e1ab69d1d53f569e346536d9cb4953677e9cb4d40691d8180cfc225583fa",
+  "style.css": "15c24a26d9f9f1f0e75e8756f02f0f3cd6d8b2f2a865ff78199388022743f4de",
+  "validate_workbook.py": "cebbcc0bef2a2367b1dc3a29587d5de4ea96050f825c8d3781ac7100a7db3447",
+  "week9_ratings.test.mjs": "64aff5d8eef8699c0260c5e1f72bd9beb5b7d2fefc9f98381838208cee592e15"
+}
