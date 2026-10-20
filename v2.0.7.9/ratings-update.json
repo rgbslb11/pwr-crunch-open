@@ -1,0 +1,2577 @@
+{
+  "version": "2.0.7.9",
+  "intendedWeek": 9,
+  "sourceFile": "GameCast_5.0.3_W09_Ratings_1-121.xlsx",
+  "sourceSheet": "Ranked Ratings",
+  "sourceColumns": [
+    "Team ID",
+    "TEAM",
+    "OFF",
+    "DEF"
+  ],
+  "sourceSha256": "f14bac8d253d2a79695fa9f56b085f70e9880a67286851758030ad1b2fa1c0ea",
+  "ratingsSha256": "f9d88687677f7c2ab64142b0635aefd3b94aee9f6568cbf08078abe67d30beec",
+  "baselineCommit": "9cab81493ef8cd15701013ddf29ee900d6fc3fa2",
+  "counts": {
+    "canonicalTeams": 121,
+    "canonicalValues": 363,
+    "syntheticFcsTeams": 13,
+    "syntheticFcsValues": 39,
+    "totalTeams": 134,
+    "totalValues": 402
+  },
+  "changedCanonicalTeams": 121,
+  "changedCanonicalValues": 346,
+  "identity": {
+    "engine": "PC-MOBILE-v2.0.7.9",
+    "data": "2026-W09-approved-ratings-v1",
+    "config": "PC-2042-R1-PROVISIONAL-2026-09-23",
+    "rng": "PC-SHA256-EVENT-v1",
+    "auditSchema": "PC-AUDIT-v2042-R1"
+  },
+  "ratingOrder": "Workbook rank order; Game selectors remain alphabetical",
+  "changes": [
+    {
+      "code": "UGA",
+      "name": "Georgia",
+      "previousSlot": 1,
+      "week9Slot": 1,
+      "previous": [
+        97,
+        96,
+        99
+      ],
+      "week9": [
+        99,
+        99,
+        99
+      ],
+      "delta": [
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "code": "OSU",
+      "name": "Ohio State",
+      "previousSlot": 5,
+      "week9Slot": 2,
+      "previous": [
+        94,
+        96,
+        92
+      ],
+      "week9": [
+        99,
+        99,
+        99
+      ],
+      "delta": [
+        5,
+        3,
+        7
+      ]
+    },
+    {
+      "code": "TTU",
+      "name": "Texas Tech",
+      "previousSlot": 8,
+      "week9Slot": 3,
+      "previous": [
+        93,
+        92,
+        94
+      ],
+      "week9": [
+        98,
+        98,
+        98
+      ],
+      "delta": [
+        5,
+        6,
+        4
+      ]
+    },
+    {
+      "code": "MIA",
+      "name": "Miami",
+      "previousSlot": 2,
+      "week9Slot": 4,
+      "previous": [
+        97,
+        99,
+        95
+      ],
+      "week9": [
+        98,
+        98,
+        98
+      ],
+      "delta": [
+        1,
+        -1,
+        3
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "Notre Dame",
+      "previousSlot": 3,
+      "week9Slot": 5,
+      "previous": [
+        95,
+        96,
+        94
+      ],
+      "week9": [
+        98,
+        99,
+        97
+      ],
+      "delta": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "code": "LSU",
+      "name": "LSU",
+      "previousSlot": 12,
+      "week9Slot": 6,
+      "previous": [
+        91,
+        92,
+        90
+      ],
+      "week9": [
+        97,
+        98,
+        96
+      ],
+      "delta": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "code": "ALA",
+      "name": "Alabama",
+      "previousSlot": 4,
+      "week9Slot": 7,
+      "previous": [
+        94,
+        99,
+        89
+      ],
+      "week9": [
+        97,
+        99,
+        95
+      ],
+      "delta": [
+        3,
+        0,
+        6
+      ]
+    },
+    {
+      "code": "MISS",
+      "name": "Ole Miss",
+      "previousSlot": 30,
+      "week9Slot": 8,
+      "previous": [
+        86,
+        89,
+        83
+      ],
+      "week9": [
+        97,
+        98,
+        96
+      ],
+      "delta": [
+        11,
+        9,
+        13
+      ]
+    },
+    {
+      "code": "IU",
+      "name": "Indiana",
+      "previousSlot": 6,
+      "week9Slot": 9,
+      "previous": [
+        93,
+        92,
+        94
+      ],
+      "week9": [
+        96,
+        95,
+        97
+      ],
+      "delta": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "code": "UTAH",
+      "name": "Utah",
+      "previousSlot": 11,
+      "week9Slot": 10,
+      "previous": [
+        92,
+        92,
+        92
+      ],
+      "week9": [
+        96,
+        97,
+        95
+      ],
+      "delta": [
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "code": "TEX",
+      "name": "Texas",
+      "previousSlot": 7,
+      "week9Slot": 11,
+      "previous": [
+        93,
+        91,
+        95
+      ],
+      "week9": [
+        96,
+        96,
+        96
+      ],
+      "delta": [
+        3,
+        5,
+        1
+      ]
+    },
+    {
+      "code": "TENN",
+      "name": "Tennessee",
+      "previousSlot": 14,
+      "week9Slot": 12,
+      "previous": [
+        90,
+        90,
+        90
+      ],
+      "week9": [
+        95,
+        94,
+        96
+      ],
+      "delta": [
+        5,
+        4,
+        6
+      ]
+    },
+    {
+      "code": "ARIZ",
+      "name": "Arizona",
+      "previousSlot": 16,
+      "week9Slot": 13,
+      "previous": [
+        88,
+        87,
+        89
+      ],
+      "week9": [
+        95,
+        95,
+        95
+      ],
+      "delta": [
+        7,
+        8,
+        6
+      ]
+    },
+    {
+      "code": "ORE",
+      "name": "Oregon",
+      "previousSlot": 10,
+      "week9Slot": 14,
+      "previous": [
+        92,
+        96,
+        88
+      ],
+      "week9": [
+        95,
+        94,
+        96
+      ],
+      "delta": [
+        3,
+        -2,
+        8
+      ]
+    },
+    {
+      "code": "BYU",
+      "name": "BYU",
+      "previousSlot": 9,
+      "week9Slot": 15,
+      "previous": [
+        92,
+        90,
+        94
+      ],
+      "week9": [
+        94,
+        92,
+        96
+      ],
+      "delta": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "code": "IOWA",
+      "name": "Iowa",
+      "previousSlot": 24,
+      "week9Slot": 16,
+      "previous": [
+        86,
+        82,
+        90
+      ],
+      "week9": [
+        94,
+        93,
+        95
+      ],
+      "delta": [
+        8,
+        11,
+        5
+      ]
+    },
+    {
+      "code": "OU",
+      "name": "Oklahoma",
+      "previousSlot": 29,
+      "week9Slot": 17,
+      "previous": [
+        86,
+        81,
+        91
+      ],
+      "week9": [
+        94,
+        93,
+        95
+      ],
+      "delta": [
+        8,
+        12,
+        4
+      ]
+    },
+    {
+      "code": "HOU",
+      "name": "Houston",
+      "previousSlot": 13,
+      "week9Slot": 18,
+      "previous": [
+        90,
+        92,
+        88
+      ],
+      "week9": [
+        93,
+        94,
+        92
+      ],
+      "delta": [
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "code": "WAKE",
+      "name": "Wake Forest",
+      "previousSlot": 38,
+      "week9Slot": 19,
+      "previous": [
+        85,
+        85,
+        85
+      ],
+      "week9": [
+        93,
+        94,
+        92
+      ],
+      "delta": [
+        8,
+        9,
+        7
+      ]
+    },
+    {
+      "code": "USC",
+      "name": "USC",
+      "previousSlot": 22,
+      "week9Slot": 20,
+      "previous": [
+        87,
+        91,
+        83
+      ],
+      "week9": [
+        93,
+        94,
+        92
+      ],
+      "delta": [
+        6,
+        3,
+        9
+      ]
+    },
+    {
+      "code": "UCLA",
+      "name": "UCLA",
+      "previousSlot": 15,
+      "week9Slot": 21,
+      "previous": [
+        90,
+        93,
+        87
+      ],
+      "week9": [
+        93,
+        93,
+        93
+      ],
+      "delta": [
+        3,
+        0,
+        6
+      ]
+    },
+    {
+      "code": "UK",
+      "name": "Kentucky",
+      "previousSlot": 40,
+      "week9Slot": 22,
+      "previous": [
+        84,
+        85,
+        83
+      ],
+      "week9": [
+        92,
+        93,
+        91
+      ],
+      "delta": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "code": "SMU",
+      "name": "SMU",
+      "previousSlot": 21,
+      "week9Slot": 23,
+      "previous": [
+        87,
+        87,
+        87
+      ],
+      "week9": [
+        92,
+        90,
+        94
+      ],
+      "delta": [
+        5,
+        3,
+        7
+      ]
+    },
+    {
+      "code": "TA&M",
+      "name": "Texas A&M",
+      "previousSlot": 32,
+      "week9Slot": 24,
+      "previous": [
+        86,
+        85,
+        87
+      ],
+      "week9": [
+        92,
+        91,
+        93
+      ],
+      "delta": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "code": "AUB",
+      "name": "Auburn",
+      "previousSlot": 47,
+      "week9Slot": 25,
+      "previous": [
+        82,
+        80,
+        84
+      ],
+      "week9": [
+        91,
+        91,
+        91
+      ],
+      "delta": [
+        9,
+        11,
+        7
+      ]
+    },
+    {
+      "code": "MICH",
+      "name": "Michigan",
+      "previousSlot": 35,
+      "week9Slot": 26,
+      "previous": [
+        85,
+        81,
+        89
+      ],
+      "week9": [
+        91,
+        89,
+        93
+      ],
+      "delta": [
+        6,
+        8,
+        4
+      ]
+    },
+    {
+      "code": "MEM",
+      "name": "Memphis",
+      "previousSlot": 26,
+      "week9Slot": 27,
+      "previous": [
+        86,
+        89,
+        83
+      ],
+      "week9": [
+        91,
+        92,
+        90
+      ],
+      "delta": [
+        5,
+        3,
+        7
+      ]
+    },
+    {
+      "code": "NU",
+      "name": "Northwestern",
+      "previousSlot": 45,
+      "week9Slot": 28,
+      "previous": [
+        83,
+        82,
+        84
+      ],
+      "week9": [
+        90,
+        90,
+        90
+      ],
+      "delta": [
+        7,
+        8,
+        6
+      ]
+    },
+    {
+      "code": "LOU",
+      "name": "Louisville",
+      "previousSlot": 41,
+      "week9Slot": 29,
+      "previous": [
+        84,
+        87,
+        81
+      ],
+      "week9": [
+        90,
+        90,
+        90
+      ],
+      "delta": [
+        6,
+        3,
+        9
+      ]
+    },
+    {
+      "code": "MIZ",
+      "name": "Missouri",
+      "previousSlot": 28,
+      "week9Slot": 30,
+      "previous": [
+        86,
+        86,
+        86
+      ],
+      "week9": [
+        90,
+        89,
+        91
+      ],
+      "delta": [
+        4,
+        3,
+        5
+      ]
+    },
+    {
+      "code": "LEH",
+      "name": "Lehigh",
+      "previousSlot": 25,
+      "week9Slot": 31,
+      "previous": [
+        86,
+        86,
+        86
+      ],
+      "week9": [
+        89,
+        89,
+        89
+      ],
+      "delta": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "code": "ORST",
+      "name": "Oregon State",
+      "previousSlot": 52,
+      "week9Slot": 32,
+      "previous": [
+        82,
+        82,
+        82
+      ],
+      "week9": [
+        89,
+        91,
+        87
+      ],
+      "delta": [
+        7,
+        9,
+        5
+      ]
+    },
+    {
+      "code": "NEB",
+      "name": "Nebraska",
+      "previousSlot": 19,
+      "week9Slot": 33,
+      "previous": [
+        87,
+        90,
+        84
+      ],
+      "week9": [
+        89,
+        90,
+        88
+      ],
+      "delta": [
+        2,
+        0,
+        4
+      ]
+    },
+    {
+      "code": "FSU",
+      "name": "Florida State",
+      "previousSlot": 39,
+      "week9Slot": 34,
+      "previous": [
+        84,
+        85,
+        83
+      ],
+      "week9": [
+        88,
+        90,
+        86
+      ],
+      "delta": [
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "code": "DUKE",
+      "name": "Duke",
+      "previousSlot": 17,
+      "week9Slot": 35,
+      "previous": [
+        87,
+        85,
+        89
+      ],
+      "week9": [
+        88,
+        86,
+        90
+      ],
+      "delta": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "code": "UCF",
+      "name": "UCF",
+      "previousSlot": 33,
+      "week9Slot": 36,
+      "previous": [
+        86,
+        84,
+        88
+      ],
+      "week9": [
+        88,
+        86,
+        90
+      ],
+      "delta": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "code": "ILL",
+      "name": "Illinois",
+      "previousSlot": 44,
+      "week9Slot": 37,
+      "previous": [
+        83,
+        84,
+        82
+      ],
+      "week9": [
+        87,
+        87,
+        87
+      ],
+      "delta": [
+        4,
+        3,
+        5
+      ]
+    },
+    {
+      "code": "VAN",
+      "name": "Vanderbilt",
+      "previousSlot": 42,
+      "week9Slot": 38,
+      "previous": [
+        84,
+        83,
+        85
+      ],
+      "week9": [
+        87,
+        89,
+        85
+      ],
+      "delta": [
+        3,
+        6,
+        0
+      ]
+    },
+    {
+      "code": "MSST",
+      "name": "Mississippi State",
+      "previousSlot": 27,
+      "week9Slot": 39,
+      "previous": [
+        86,
+        89,
+        83
+      ],
+      "week9": [
+        87,
+        87,
+        87
+      ],
+      "delta": [
+        1,
+        -2,
+        4
+      ]
+    },
+    {
+      "code": "FLA",
+      "name": "Florida",
+      "previousSlot": 18,
+      "week9Slot": 40,
+      "previous": [
+        87,
+        93,
+        81
+      ],
+      "week9": [
+        86,
+        88,
+        84
+      ],
+      "delta": [
+        -1,
+        -5,
+        3
+      ]
+    },
+    {
+      "code": "PSU",
+      "name": "Penn State",
+      "previousSlot": 31,
+      "week9Slot": 41,
+      "previous": [
+        86,
+        85,
+        87
+      ],
+      "week9": [
+        86,
+        86,
+        86
+      ],
+      "delta": [
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "code": "WASH",
+      "name": "Washington",
+      "previousSlot": 46,
+      "week9Slot": 42,
+      "previous": [
+        83,
+        81,
+        85
+      ],
+      "week9": [
+        86,
+        86,
+        86
+      ],
+      "delta": [
+        3,
+        5,
+        1
+      ]
+    },
+    {
+      "code": "UNC",
+      "name": "North Carolina",
+      "previousSlot": 51,
+      "week9Slot": 43,
+      "previous": [
+        82,
+        80,
+        84
+      ],
+      "week9": [
+        85,
+        84,
+        86
+      ],
+      "delta": [
+        3,
+        4,
+        2
+      ]
+    },
+    {
+      "code": "BOISE",
+      "name": "Boise State",
+      "previousSlot": 23,
+      "week9Slot": 44,
+      "previous": [
+        86,
+        86,
+        86
+      ],
+      "week9": [
+        85,
+        87,
+        83
+      ],
+      "delta": [
+        -1,
+        1,
+        -3
+      ]
+    },
+    {
+      "code": "UVA",
+      "name": "Virginia",
+      "previousSlot": 34,
+      "week9Slot": 45,
+      "previous": [
+        86,
+        86,
+        86
+      ],
+      "week9": [
+        85,
+        85,
+        85
+      ],
+      "delta": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "code": "OKST",
+      "name": "Oklahoma State",
+      "previousSlot": 20,
+      "week9Slot": 46,
+      "previous": [
+        87,
+        88,
+        86
+      ],
+      "week9": [
+        84,
+        84,
+        84
+      ],
+      "delta": [
+        -3,
+        -4,
+        -2
+      ]
+    },
+    {
+      "code": "GAST",
+      "name": "Georgia State",
+      "previousSlot": 58,
+      "week9Slot": 47,
+      "previous": [
+        81,
+        83,
+        79
+      ],
+      "week9": [
+        84,
+        85,
+        83
+      ],
+      "delta": [
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "code": "TCU",
+      "name": "TCU",
+      "previousSlot": 54,
+      "week9Slot": 48,
+      "previous": [
+        82,
+        77,
+        87
+      ],
+      "week9": [
+        84,
+        82,
+        86
+      ],
+      "delta": [
+        2,
+        5,
+        -1
+      ]
+    },
+    {
+      "code": "MSU",
+      "name": "Michigan State",
+      "previousSlot": 63,
+      "week9Slot": 49,
+      "previous": [
+        79,
+        75,
+        83
+      ],
+      "week9": [
+        83,
+        82,
+        84
+      ],
+      "delta": [
+        4,
+        7,
+        1
+      ]
+    },
+    {
+      "code": "HC",
+      "name": "Holy Cross",
+      "previousSlot": 61,
+      "week9Slot": 50,
+      "previous": [
+        80,
+        81,
+        79
+      ],
+      "week9": [
+        83,
+        83,
+        83
+      ],
+      "delta": [
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "code": "COLG",
+      "name": "Colgate",
+      "previousSlot": 68,
+      "week9Slot": 51,
+      "previous": [
+        78,
+        76,
+        80
+      ],
+      "week9": [
+        83,
+        84,
+        82
+      ],
+      "delta": [
+        5,
+        8,
+        2
+      ]
+    },
+    {
+      "code": "CIN",
+      "name": "Cincinnati",
+      "previousSlot": 48,
+      "week9Slot": 52,
+      "previous": [
+        82,
+        83,
+        81
+      ],
+      "week9": [
+        82,
+        82,
+        82
+      ],
+      "delta": [
+        0,
+        -1,
+        1
+      ]
+    },
+    {
+      "code": "WIS",
+      "name": "Wisconsin",
+      "previousSlot": 55,
+      "week9Slot": 53,
+      "previous": [
+        82,
+        81,
+        83
+      ],
+      "week9": [
+        82,
+        80,
+        84
+      ],
+      "delta": [
+        0,
+        -1,
+        1
+      ]
+    },
+    {
+      "code": "PUR",
+      "name": "Purdue",
+      "previousSlot": 86,
+      "week9Slot": 54,
+      "previous": [
+        75,
+        76,
+        74
+      ],
+      "week9": [
+        82,
+        83,
+        81
+      ],
+      "delta": [
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "code": "USF",
+      "name": "South Florida",
+      "previousSlot": 53,
+      "week9Slot": 55,
+      "previous": [
+        82,
+        79,
+        85
+      ],
+      "week9": [
+        81,
+        81,
+        81
+      ],
+      "delta": [
+        -1,
+        2,
+        -4
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "previousSlot": 78,
+      "week9Slot": 56,
+      "previous": [
+        77,
+        79,
+        75
+      ],
+      "week9": [
+        81,
+        81,
+        81
+      ],
+      "delta": [
+        4,
+        2,
+        6
+      ]
+    },
+    {
+      "code": "CLEM",
+      "name": "Clemson",
+      "previousSlot": 57,
+      "week9Slot": 57,
+      "previous": [
+        81,
+        79,
+        83
+      ],
+      "week9": [
+        81,
+        81,
+        81
+      ],
+      "delta": [
+        0,
+        2,
+        -2
+      ]
+    },
+    {
+      "code": "PITT",
+      "name": "Pittsburgh",
+      "previousSlot": 36,
+      "week9Slot": 58,
+      "previous": [
+        85,
+        84,
+        86
+      ],
+      "week9": [
+        80,
+        80,
+        80
+      ],
+      "delta": [
+        -5,
+        -4,
+        -6
+      ]
+    },
+    {
+      "code": "GT",
+      "name": "Georgia Tech",
+      "previousSlot": 70,
+      "week9Slot": 59,
+      "previous": [
+        78,
+        77,
+        79
+      ],
+      "week9": [
+        80,
+        79,
+        81
+      ],
+      "delta": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "code": "ISU",
+      "name": "Iowa State",
+      "previousSlot": 71,
+      "week9Slot": 60,
+      "previous": [
+        78,
+        79,
+        77
+      ],
+      "week9": [
+        80,
+        80,
+        80
+      ],
+      "delta": [
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "previousSlot": 50,
+      "week9Slot": 61,
+      "previous": [
+        82,
+        82,
+        82
+      ],
+      "week9": [
+        80,
+        79,
+        81
+      ],
+      "delta": [
+        -2,
+        -3,
+        -1
+      ]
+    },
+    {
+      "code": "KSU",
+      "name": "Kansas State",
+      "previousSlot": 49,
+      "week9Slot": 62,
+      "previous": [
+        82,
+        82,
+        82
+      ],
+      "week9": [
+        79,
+        79,
+        79
+      ],
+      "delta": [
+        -3,
+        -3,
+        -3
+      ]
+    },
+    {
+      "code": "ARK",
+      "name": "Arkansas",
+      "previousSlot": 81,
+      "week9Slot": 63,
+      "previous": [
+        76,
+        74,
+        78
+      ],
+      "week9": [
+        79,
+        78,
+        80
+      ],
+      "delta": [
+        3,
+        4,
+        2
+      ]
+    },
+    {
+      "code": "ARMY",
+      "name": "Army",
+      "previousSlot": 43,
+      "week9Slot": 64,
+      "previous": [
+        83,
+        82,
+        84
+      ],
+      "week9": [
+        79,
+        78,
+        80
+      ],
+      "delta": [
+        -4,
+        -4,
+        -4
+      ]
+    },
+    {
+      "code": "NDSU",
+      "name": "North Dakota State",
+      "previousSlot": 60,
+      "week9Slot": 65,
+      "previous": [
+        81,
+        81,
+        81
+      ],
+      "week9": [
+        78,
+        79,
+        77
+      ],
+      "delta": [
+        -3,
+        -2,
+        -4
+      ]
+    },
+    {
+      "code": "BAY",
+      "name": "Baylor",
+      "previousSlot": 56,
+      "week9Slot": 66,
+      "previous": [
+        81,
+        79,
+        83
+      ],
+      "week9": [
+        78,
+        77,
+        79
+      ],
+      "delta": [
+        -3,
+        -2,
+        -4
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Virginia Tech",
+      "previousSlot": 37,
+      "week9Slot": 67,
+      "previous": [
+        85,
+        87,
+        83
+      ],
+      "week9": [
+        78,
+        79,
+        77
+      ],
+      "delta": [
+        -7,
+        -8,
+        -6
+      ]
+    },
+    {
+      "code": "WVU",
+      "name": "West Virginia",
+      "previousSlot": 76,
+      "week9Slot": 68,
+      "previous": [
+        78,
+        82,
+        74
+      ],
+      "week9": [
+        77,
+        79,
+        75
+      ],
+      "delta": [
+        -1,
+        -3,
+        1
+      ]
+    },
+    {
+      "code": "TLN",
+      "name": "Tulane",
+      "previousSlot": 80,
+      "week9Slot": 69,
+      "previous": [
+        77,
+        74,
+        80
+      ],
+      "week9": [
+        77,
+        78,
+        76
+      ],
+      "delta": [
+        0,
+        4,
+        -4
+      ]
+    },
+    {
+      "code": "COLO",
+      "name": "Colorado",
+      "previousSlot": 88,
+      "week9Slot": 70,
+      "previous": [
+        74,
+        70,
+        78
+      ],
+      "week9": [
+        77,
+        75,
+        79
+      ],
+      "delta": [
+        3,
+        5,
+        1
+      ]
+    },
+    {
+      "code": "MINN",
+      "name": "Minnesota",
+      "previousSlot": 73,
+      "week9Slot": 71,
+      "previous": [
+        78,
+        77,
+        79
+      ],
+      "week9": [
+        76,
+        76,
+        76
+      ],
+      "delta": [
+        -2,
+        -1,
+        -3
+      ]
+    },
+    {
+      "code": "PENN",
+      "name": "Penn",
+      "previousSlot": 90,
+      "week9Slot": 72,
+      "previous": [
+        74,
+        76,
+        72
+      ],
+      "week9": [
+        76,
+        76,
+        76
+      ],
+      "delta": [
+        2,
+        0,
+        4
+      ]
+    },
+    {
+      "code": "UNT",
+      "name": "North Texas",
+      "previousSlot": 74,
+      "week9Slot": 73,
+      "previous": [
+        78,
+        83,
+        73
+      ],
+      "week9": [
+        76,
+        77,
+        75
+      ],
+      "delta": [
+        -2,
+        -6,
+        2
+      ]
+    },
+    {
+      "code": "UConn",
+      "name": "UConn",
+      "previousSlot": 66,
+      "week9Slot": 74,
+      "previous": [
+        79,
+        82,
+        76
+      ],
+      "week9": [
+        75,
+        77,
+        73
+      ],
+      "delta": [
+        -4,
+        -5,
+        -3
+      ]
+    },
+    {
+      "code": "CAL",
+      "name": "California",
+      "previousSlot": 67,
+      "week9Slot": 75,
+      "previous": [
+        78,
+        78,
+        78
+      ],
+      "week9": [
+        75,
+        75,
+        75
+      ],
+      "delta": [
+        -3,
+        -3,
+        -3
+      ]
+    },
+    {
+      "code": "NCSU",
+      "name": "NC State",
+      "previousSlot": 59,
+      "week9Slot": 76,
+      "previous": [
+        81,
+        83,
+        79
+      ],
+      "week9": [
+        75,
+        75,
+        75
+      ],
+      "delta": [
+        -6,
+        -8,
+        -4
+      ]
+    },
+    {
+      "code": "USU",
+      "name": "Utah State",
+      "previousSlot": 85,
+      "week9Slot": 77,
+      "previous": [
+        76,
+        73,
+        79
+      ],
+      "week9": [
+        74,
+        73,
+        75
+      ],
+      "delta": [
+        -2,
+        0,
+        -4
+      ]
+    },
+    {
+      "code": "UNLV",
+      "name": "UNLV",
+      "previousSlot": 84,
+      "week9Slot": 78,
+      "previous": [
+        76,
+        74,
+        78
+      ],
+      "week9": [
+        74,
+        74,
+        74
+      ],
+      "delta": [
+        -2,
+        0,
+        -4
+      ]
+    },
+    {
+      "code": "AF",
+      "name": "Air Force",
+      "previousSlot": 92,
+      "week9Slot": 79,
+      "previous": [
+        73,
+        72,
+        74
+      ],
+      "week9": [
+        74,
+        75,
+        73
+      ],
+      "delta": [
+        1,
+        3,
+        -1
+      ]
+    },
+    {
+      "code": "FAU",
+      "name": "Florida Atlantic",
+      "previousSlot": 82,
+      "week9Slot": 80,
+      "previous": [
+        76,
+        78,
+        74
+      ],
+      "week9": [
+        73,
+        73,
+        73
+      ],
+      "delta": [
+        -3,
+        -5,
+        -1
+      ]
+    },
+    {
+      "code": "SYR",
+      "name": "Syracuse",
+      "previousSlot": 79,
+      "week9Slot": 81,
+      "previous": [
+        77,
+        78,
+        76
+      ],
+      "week9": [
+        73,
+        75,
+        71
+      ],
+      "delta": [
+        -4,
+        -3,
+        -5
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "previousSlot": 62,
+      "week9Slot": 82,
+      "previous": [
+        79,
+        80,
+        78
+      ],
+      "week9": [
+        73,
+        74,
+        72
+      ],
+      "delta": [
+        -6,
+        -6,
+        -6
+      ]
+    },
+    {
+      "code": "BC",
+      "name": "Boston College",
+      "previousSlot": 99,
+      "week9Slot": 83,
+      "previous": [
+        71,
+        66,
+        76
+      ],
+      "week9": [
+        72,
+        70,
+        74
+      ],
+      "delta": [
+        1,
+        4,
+        -2
+      ]
+    },
+    {
+      "code": "FRES",
+      "name": "Fresno State",
+      "previousSlot": 69,
+      "week9Slot": 84,
+      "previous": [
+        78,
+        75,
+        81
+      ],
+      "week9": [
+        72,
+        71,
+        73
+      ],
+      "delta": [
+        -6,
+        -4,
+        -8
+      ]
+    },
+    {
+      "code": "TROY",
+      "name": "Troy",
+      "previousSlot": 98,
+      "week9Slot": 85,
+      "previous": [
+        72,
+        69,
+        75
+      ],
+      "week9": [
+        72,
+        70,
+        74
+      ],
+      "delta": [
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "code": "UTSA",
+      "name": "UTSA",
+      "previousSlot": 75,
+      "week9Slot": 86,
+      "previous": [
+        78,
+        80,
+        76
+      ],
+      "week9": [
+        71,
+        73,
+        69
+      ],
+      "delta": [
+        -7,
+        -7,
+        -7
+      ]
+    },
+    {
+      "code": "LT",
+      "name": "Louisiana Tech",
+      "previousSlot": 96,
+      "week9Slot": 87,
+      "previous": [
+        73,
+        75,
+        71
+      ],
+      "week9": [
+        71,
+        71,
+        71
+      ],
+      "delta": [
+        -2,
+        -4,
+        0
+      ]
+    },
+    {
+      "code": "NAVY",
+      "name": "Navy",
+      "previousSlot": 64,
+      "week9Slot": 88,
+      "previous": [
+        79,
+        77,
+        81
+      ],
+      "week9": [
+        71,
+        69,
+        73
+      ],
+      "delta": [
+        -8,
+        -8,
+        -8
+      ]
+    },
+    {
+      "code": "TXST",
+      "name": "Texas State",
+      "previousSlot": 91,
+      "week9Slot": 89,
+      "previous": [
+        74,
+        79,
+        69
+      ],
+      "week9": [
+        70,
+        72,
+        68
+      ],
+      "delta": [
+        -4,
+        -7,
+        -1
+      ]
+    },
+    {
+      "code": "WSU",
+      "name": "Washington State",
+      "previousSlot": 102,
+      "week9Slot": 90,
+      "previous": [
+        71,
+        69,
+        73
+      ],
+      "week9": [
+        70,
+        70,
+        70
+      ],
+      "delta": [
+        -1,
+        1,
+        -3
+      ]
+    },
+    {
+      "code": "KU",
+      "name": "Kansas",
+      "previousSlot": 72,
+      "week9Slot": 91,
+      "previous": [
+        78,
+        77,
+        79
+      ],
+      "week9": [
+        70,
+        70,
+        70
+      ],
+      "delta": [
+        -8,
+        -7,
+        -9
+      ]
+    },
+    {
+      "code": "TLSA",
+      "name": "Tulsa",
+      "previousSlot": 65,
+      "week9Slot": 92,
+      "previous": [
+        79,
+        76,
+        82
+      ],
+      "week9": [
+        69,
+        68,
+        70
+      ],
+      "delta": [
+        -10,
+        -8,
+        -12
+      ]
+    },
+    {
+      "code": "SJSU",
+      "name": "San Jose State",
+      "previousSlot": 97,
+      "week9Slot": 93,
+      "previous": [
+        72,
+        70,
+        74
+      ],
+      "week9": [
+        69,
+        68,
+        70
+      ],
+      "delta": [
+        -3,
+        -2,
+        -4
+      ]
+    },
+    {
+      "code": "PRIN",
+      "name": "Princeton",
+      "previousSlot": 108,
+      "week9Slot": 94,
+      "previous": [
+        70,
+        71,
+        69
+      ],
+      "week9": [
+        69,
+        70,
+        68
+      ],
+      "delta": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "code": "ASU",
+      "name": "Arizona State",
+      "previousSlot": 77,
+      "week9Slot": 95,
+      "previous": [
+        77,
+        81,
+        73
+      ],
+      "week9": [
+        68,
+        70,
+        66
+      ],
+      "delta": [
+        -9,
+        -11,
+        -7
+      ]
+    },
+    {
+      "code": "TEM",
+      "name": "Temple",
+      "previousSlot": 83,
+      "week9Slot": 96,
+      "previous": [
+        76,
+        74,
+        78
+      ],
+      "week9": [
+        68,
+        67,
+        69
+      ],
+      "delta": [
+        -8,
+        -7,
+        -9
+      ]
+    },
+    {
+      "code": "YALE",
+      "name": "Yale",
+      "previousSlot": 110,
+      "week9Slot": 97,
+      "previous": [
+        70,
+        71,
+        69
+      ],
+      "week9": [
+        68,
+        68,
+        68
+      ],
+      "delta": [
+        -2,
+        -3,
+        -1
+      ]
+    },
+    {
+      "code": "DEL",
+      "name": "Delaware",
+      "previousSlot": 94,
+      "week9Slot": 98,
+      "previous": [
+        73,
+        71,
+        75
+      ],
+      "week9": [
+        67,
+        66,
+        68
+      ],
+      "delta": [
+        -6,
+        -5,
+        -7
+      ]
+    },
+    {
+      "code": "UAB",
+      "name": "UAB",
+      "previousSlot": 109,
+      "week9Slot": 99,
+      "previous": [
+        70,
+        68,
+        72
+      ],
+      "week9": [
+        67,
+        67,
+        67
+      ],
+      "delta": [
+        -3,
+        -1,
+        -5
+      ]
+    },
+    {
+      "code": "SDSU",
+      "name": "San Diego State",
+      "previousSlot": 87,
+      "week9Slot": 100,
+      "previous": [
+        75,
+        73,
+        77
+      ],
+      "week9": [
+        67,
+        67,
+        67
+      ],
+      "delta": [
+        -8,
+        -6,
+        -10
+      ]
+    },
+    {
+      "code": "RUTG",
+      "name": "Rutgers",
+      "previousSlot": 111,
+      "week9Slot": 101,
+      "previous": [
+        69,
+        72,
+        66
+      ],
+      "week9": [
+        67,
+        68,
+        66
+      ],
+      "delta": [
+        -2,
+        -4,
+        0
+      ]
+    },
+    {
+      "code": "CSU",
+      "name": "Colorado State",
+      "previousSlot": 93,
+      "week9Slot": 102,
+      "previous": [
+        73,
+        79,
+        67
+      ],
+      "week9": [
+        66,
+        68,
+        64
+      ],
+      "delta": [
+        -7,
+        -11,
+        -3
+      ]
+    },
+    {
+      "code": "ECU",
+      "name": "East Carolina",
+      "previousSlot": 89,
+      "week9Slot": 103,
+      "previous": [
+        74,
+        72,
+        76
+      ],
+      "week9": [
+        66,
+        65,
+        67
+      ],
+      "delta": [
+        -8,
+        -7,
+        -9
+      ]
+    },
+    {
+      "code": "COR",
+      "name": "Cornell",
+      "previousSlot": 105,
+      "week9Slot": 104,
+      "previous": [
+        70,
+        71,
+        69
+      ],
+      "week9": [
+        66,
+        67,
+        65
+      ],
+      "delta": [
+        -4,
+        -4,
+        -4
+      ]
+    },
+    {
+      "code": "ODU",
+      "name": "Old Dominion",
+      "previousSlot": 107,
+      "week9Slot": 105,
+      "previous": [
+        70,
+        68,
+        72
+      ],
+      "week9": [
+        65,
+        63,
+        67
+      ],
+      "delta": [
+        -5,
+        -5,
+        -5
+      ]
+    },
+    {
+      "code": "FIU",
+      "name": "Florida International",
+      "previousSlot": 95,
+      "week9Slot": 106,
+      "previous": [
+        73,
+        67,
+        79
+      ],
+      "week9": [
+        65,
+        63,
+        67
+      ],
+      "delta": [
+        -8,
+        -4,
+        -12
+      ]
+    },
+    {
+      "code": "MRSH",
+      "name": "Marshall",
+      "previousSlot": 101,
+      "week9Slot": 107,
+      "previous": [
+        71,
+        72,
+        70
+      ],
+      "week9": [
+        65,
+        65,
+        65
+      ],
+      "delta": [
+        -6,
+        -7,
+        -5
+      ]
+    },
+    {
+      "code": "BUFF",
+      "name": "Buffalo",
+      "previousSlot": 103,
+      "week9Slot": 108,
+      "previous": [
+        70,
+        70,
+        70
+      ],
+      "week9": [
+        64,
+        64,
+        64
+      ],
+      "delta": [
+        -6,
+        -6,
+        -6
+      ]
+    },
+    {
+      "code": "USM",
+      "name": "Southern Miss",
+      "previousSlot": 112,
+      "week9Slot": 109,
+      "previous": [
+        69,
+        70,
+        68
+      ],
+      "week9": [
+        64,
+        65,
+        63
+      ],
+      "delta": [
+        -5,
+        -5,
+        -5
+      ]
+    },
+    {
+      "code": "NEV",
+      "name": "Nevada",
+      "previousSlot": 113,
+      "week9Slot": 110,
+      "previous": [
+        68,
+        67,
+        69
+      ],
+      "week9": [
+        64,
+        64,
+        64
+      ],
+      "delta": [
+        -4,
+        -3,
+        -5
+      ]
+    },
+    {
+      "code": "HARV",
+      "name": "Harvard",
+      "previousSlot": 106,
+      "week9Slot": 111,
+      "previous": [
+        70,
+        69,
+        71
+      ],
+      "week9": [
+        63,
+        63,
+        63
+      ],
+      "delta": [
+        -7,
+        -6,
+        -8
+      ]
+    },
+    {
+      "code": "CCU",
+      "name": "Coastal Carolina",
+      "previousSlot": 104,
+      "week9Slot": 112,
+      "previous": [
+        70,
+        68,
+        72
+      ],
+      "week9": [
+        63,
+        62,
+        64
+      ],
+      "delta": [
+        -7,
+        -6,
+        -8
+      ]
+    },
+    {
+      "code": "STAN",
+      "name": "Stanford",
+      "previousSlot": 116,
+      "week9Slot": 113,
+      "previous": [
+        68,
+        70,
+        66
+      ],
+      "week9": [
+        63,
+        65,
+        61
+      ],
+      "delta": [
+        -5,
+        -5,
+        -5
+      ]
+    },
+    {
+      "code": "NIU",
+      "name": "Northern Illinois",
+      "previousSlot": 115,
+      "week9Slot": 114,
+      "previous": [
+        68,
+        67,
+        69
+      ],
+      "week9": [
+        62,
+        61,
+        63
+      ],
+      "delta": [
+        -6,
+        -6,
+        -6
+      ]
+    },
+    {
+      "code": "MTSU",
+      "name": "Middle Tennessee",
+      "previousSlot": 117,
+      "week9Slot": 115,
+      "previous": [
+        67,
+        66,
+        68
+      ],
+      "week9": [
+        62,
+        62,
+        62
+      ],
+      "delta": [
+        -5,
+        -4,
+        -6
+      ]
+    },
+    {
+      "code": "WYO",
+      "name": "Wyoming",
+      "previousSlot": 118,
+      "week9Slot": 116,
+      "previous": [
+        67,
+        62,
+        72
+      ],
+      "week9": [
+        62,
+        62,
+        62
+      ],
+      "delta": [
+        -5,
+        0,
+        -10
+      ]
+    },
+    {
+      "code": "HAW",
+      "name": "Hawai’i",
+      "previousSlot": 119,
+      "week9Slot": 117,
+      "previous": [
+        65,
+        63,
+        67
+      ],
+      "week9": [
+        61,
+        60,
+        62
+      ],
+      "delta": [
+        -4,
+        -3,
+        -5
+      ]
+    },
+    {
+      "code": "NMSU",
+      "name": "New Mexico State",
+      "previousSlot": 114,
+      "week9Slot": 118,
+      "previous": [
+        68,
+        68,
+        68
+      ],
+      "week9": [
+        61,
+        60,
+        62
+      ],
+      "delta": [
+        -7,
+        -8,
+        -6
+      ]
+    },
+    {
+      "code": "GASO",
+      "name": "Georgia Southern",
+      "previousSlot": 100,
+      "week9Slot": 119,
+      "previous": [
+        71,
+        70,
+        72
+      ],
+      "week9": [
+        61,
+        61,
+        61
+      ],
+      "delta": [
+        -10,
+        -9,
+        -11
+      ]
+    },
+    {
+      "code": "RICE",
+      "name": "Rice",
+      "previousSlot": 120,
+      "week9Slot": 120,
+      "previous": [
+        63,
+        63,
+        63
+      ],
+      "week9": [
+        60,
+        60,
+        60
+      ],
+      "delta": [
+        -3,
+        -3,
+        -3
+      ]
+    },
+    {
+      "code": "UTEP",
+      "name": "UTEP",
+      "previousSlot": 121,
+      "week9Slot": 121,
+      "previous": [
+        63,
+        65,
+        61
+      ],
+      "week9": [
+        60,
+        60,
+        60
+      ],
+      "delta": [
+        -3,
+        -5,
+        -1
+      ]
+    }
+  ],
+  "sourceBundled": false
+}
