@@ -1,0 +1,849 @@
+[
+  {
+    "rank": 1,
+    "code": "UGA",
+    "TEAM": 99,
+    "OFF": 99,
+    "DEF": 99
+  },
+  {
+    "rank": 2,
+    "code": "MIA",
+    "TEAM": 99,
+    "OFF": 99,
+    "DEF": 99
+  },
+  {
+    "rank": 3,
+    "code": "ALA",
+    "TEAM": 98,
+    "OFF": 99,
+    "DEF": 97
+  },
+  {
+    "rank": 4,
+    "code": "ND",
+    "TEAM": 98,
+    "OFF": 99,
+    "DEF": 97
+  },
+  {
+    "rank": 5,
+    "code": "UTAH",
+    "TEAM": 98,
+    "OFF": 99,
+    "DEF": 97
+  },
+  {
+    "rank": 6,
+    "code": "OSU",
+    "TEAM": 97,
+    "OFF": 98,
+    "DEF": 96
+  },
+  {
+    "rank": 7,
+    "code": "TENN",
+    "TEAM": 97,
+    "OFF": 96,
+    "DEF": 98
+  },
+  {
+    "rank": 8,
+    "code": "TEX",
+    "TEAM": 97,
+    "OFF": 97,
+    "DEF": 97
+  },
+  {
+    "rank": 9,
+    "code": "TTU",
+    "TEAM": 96,
+    "OFF": 98,
+    "DEF": 94
+  },
+  {
+    "rank": 10,
+    "code": "IU",
+    "TEAM": 96,
+    "OFF": 94,
+    "DEF": 98
+  },
+  {
+    "rank": 11,
+    "code": "ORE",
+    "TEAM": 96,
+    "OFF": 96,
+    "DEF": 96
+  },
+  {
+    "rank": 12,
+    "code": "LSU",
+    "TEAM": 95,
+    "OFF": 95,
+    "DEF": 95
+  },
+  {
+    "rank": 13,
+    "code": "MISS",
+    "TEAM": 95,
+    "OFF": 97,
+    "DEF": 93
+  },
+  {
+    "rank": 14,
+    "code": "ARIZ",
+    "TEAM": 95,
+    "OFF": 96,
+    "DEF": 94
+  },
+  {
+    "rank": 15,
+    "code": "LOU",
+    "TEAM": 94,
+    "OFF": 94,
+    "DEF": 94
+  },
+  {
+    "rank": 16,
+    "code": "BYU",
+    "TEAM": 94,
+    "OFF": 93,
+    "DEF": 95
+  },
+  {
+    "rank": 17,
+    "code": "WAKE",
+    "TEAM": 94,
+    "OFF": 95,
+    "DEF": 93
+  },
+  {
+    "rank": 18,
+    "code": "IOWA",
+    "TEAM": 93,
+    "OFF": 91,
+    "DEF": 95
+  },
+  {
+    "rank": 19,
+    "code": "USC",
+    "TEAM": 93,
+    "OFF": 94,
+    "DEF": 92
+  },
+  {
+    "rank": 20,
+    "code": "TA&M",
+    "TEAM": 93,
+    "OFF": 92,
+    "DEF": 94
+  },
+  {
+    "rank": 21,
+    "code": "SMU",
+    "TEAM": 93,
+    "OFF": 93,
+    "DEF": 93
+  },
+  {
+    "rank": 22,
+    "code": "DUKE",
+    "TEAM": 92,
+    "OFF": 90,
+    "DEF": 94
+  },
+  {
+    "rank": 23,
+    "code": "OU",
+    "TEAM": 92,
+    "OFF": 91,
+    "DEF": 93
+  },
+  {
+    "rank": 24,
+    "code": "UK",
+    "TEAM": 92,
+    "OFF": 93,
+    "DEF": 91
+  },
+  {
+    "rank": 25,
+    "code": "MIZ",
+    "TEAM": 91,
+    "OFF": 90,
+    "DEF": 92
+  },
+  {
+    "rank": 26,
+    "code": "HOU",
+    "TEAM": 91,
+    "OFF": 92,
+    "DEF": 90
+  },
+  {
+    "rank": 27,
+    "code": "UCLA",
+    "TEAM": 91,
+    "OFF": 91,
+    "DEF": 91
+  },
+  {
+    "rank": 28,
+    "code": "BOISE",
+    "TEAM": 90,
+    "OFF": 92,
+    "DEF": 88
+  },
+  {
+    "rank": 29,
+    "code": "NEB",
+    "TEAM": 90,
+    "OFF": 89,
+    "DEF": 91
+  },
+  {
+    "rank": 30,
+    "code": "UNC",
+    "TEAM": 90,
+    "OFF": 89,
+    "DEF": 91
+  },
+  {
+    "rank": 31,
+    "code": "ILL",
+    "TEAM": 89,
+    "OFF": 88,
+    "DEF": 90
+  },
+  {
+    "rank": 32,
+    "code": "MICH",
+    "TEAM": 89,
+    "OFF": 87,
+    "DEF": 91
+  },
+  {
+    "rank": 33,
+    "code": "OKST",
+    "TEAM": 89,
+    "OFF": 91,
+    "DEF": 87
+  },
+  {
+    "rank": 34,
+    "code": "FLA",
+    "TEAM": 88,
+    "OFF": 88,
+    "DEF": 88
+  },
+  {
+    "rank": 35,
+    "code": "SC",
+    "TEAM": 88,
+    "OFF": 88,
+    "DEF": 88
+  },
+  {
+    "rank": 36,
+    "code": "PSU",
+    "TEAM": 88,
+    "OFF": 88,
+    "DEF": 88
+  },
+  {
+    "rank": 37,
+    "code": "FSU",
+    "TEAM": 87,
+    "OFF": 90,
+    "DEF": 84
+  },
+  {
+    "rank": 38,
+    "code": "AUB",
+    "TEAM": 87,
+    "OFF": 87,
+    "DEF": 87
+  },
+  {
+    "rank": 39,
+    "code": "NU",
+    "TEAM": 87,
+    "OFF": 87,
+    "DEF": 87
+  },
+  {
+    "rank": 40,
+    "code": "UVA",
+    "TEAM": 86,
+    "OFF": 86,
+    "DEF": 86
+  },
+  {
+    "rank": 41,
+    "code": "WASH",
+    "TEAM": 86,
+    "OFF": 86,
+    "DEF": 86
+  },
+  {
+    "rank": 42,
+    "code": "BAY",
+    "TEAM": 86,
+    "OFF": 86,
+    "DEF": 86
+  },
+  {
+    "rank": 43,
+    "code": "CLEM",
+    "TEAM": 85,
+    "OFF": 84,
+    "DEF": 86
+  },
+  {
+    "rank": 44,
+    "code": "MEM",
+    "TEAM": 85,
+    "OFF": 86,
+    "DEF": 84
+  },
+  {
+    "rank": 45,
+    "code": "TCU",
+    "TEAM": 85,
+    "OFF": 83,
+    "DEF": 87
+  },
+  {
+    "rank": 46,
+    "code": "USF",
+    "TEAM": 84,
+    "OFF": 84,
+    "DEF": 84
+  },
+  {
+    "rank": 47,
+    "code": "VAN",
+    "TEAM": 84,
+    "OFF": 85,
+    "DEF": 83
+  },
+  {
+    "rank": 48,
+    "code": "WIS",
+    "TEAM": 84,
+    "OFF": 82,
+    "DEF": 86
+  },
+  {
+    "rank": 49,
+    "code": "LEH",
+    "TEAM": 83,
+    "OFF": 82,
+    "DEF": 84
+  },
+  {
+    "rank": 50,
+    "code": "MSST",
+    "TEAM": 83,
+    "OFF": 83,
+    "DEF": 83
+  },
+  {
+    "rank": 51,
+    "code": "CIN",
+    "TEAM": 83,
+    "OFF": 84,
+    "DEF": 82
+  },
+  {
+    "rank": 52,
+    "code": "UCF",
+    "TEAM": 82,
+    "OFF": 81,
+    "DEF": 83
+  },
+  {
+    "rank": 53,
+    "code": "ARMY",
+    "TEAM": 82,
+    "OFF": 82,
+    "DEF": 82
+  },
+  {
+    "rank": 54,
+    "code": "COLG",
+    "TEAM": 82,
+    "OFF": 83,
+    "DEF": 81
+  },
+  {
+    "rank": 55,
+    "code": "ISU",
+    "TEAM": 81,
+    "OFF": 82,
+    "DEF": 80
+  },
+  {
+    "rank": 56,
+    "code": "PUR",
+    "TEAM": 81,
+    "OFF": 82,
+    "DEF": 80
+  },
+  {
+    "rank": 57,
+    "code": "ARK",
+    "TEAM": 81,
+    "OFF": 80,
+    "DEF": 82
+  },
+  {
+    "rank": 58,
+    "code": "PITT",
+    "TEAM": 80,
+    "OFF": 80,
+    "DEF": 80
+  },
+  {
+    "rank": 59,
+    "code": "TXST",
+    "TEAM": 80,
+    "OFF": 83,
+    "DEF": 77
+  },
+  {
+    "rank": 60,
+    "code": "NM",
+    "TEAM": 80,
+    "OFF": 78,
+    "DEF": 82
+  },
+  {
+    "rank": 61,
+    "code": "HC",
+    "TEAM": 80,
+    "OFF": 79,
+    "DEF": 81
+  },
+  {
+    "rank": 62,
+    "code": "MSU",
+    "TEAM": 79,
+    "OFF": 79,
+    "DEF": 79
+  },
+  {
+    "rank": 63,
+    "code": "NDSU",
+    "TEAM": 79,
+    "OFF": 80,
+    "DEF": 78
+  },
+  {
+    "rank": 64,
+    "code": "GT",
+    "TEAM": 79,
+    "OFF": 78,
+    "DEF": 80
+  },
+  {
+    "rank": 65,
+    "code": "ORST",
+    "TEAM": 78,
+    "OFF": 80,
+    "DEF": 76
+  },
+  {
+    "rank": 66,
+    "code": "FAU",
+    "TEAM": 78,
+    "OFF": 79,
+    "DEF": 77
+  },
+  {
+    "rank": 67,
+    "code": "UNT",
+    "TEAM": 78,
+    "OFF": 78,
+    "DEF": 78
+  },
+  {
+    "rank": 68,
+    "code": "VT",
+    "TEAM": 77,
+    "OFF": 79,
+    "DEF": 75
+  },
+  {
+    "rank": 69,
+    "code": "FRES",
+    "TEAM": 77,
+    "OFF": 76,
+    "DEF": 78
+  },
+  {
+    "rank": 70,
+    "code": "MD",
+    "TEAM": 77,
+    "OFF": 78,
+    "DEF": 76
+  },
+  {
+    "rank": 71,
+    "code": "ASU",
+    "TEAM": 76,
+    "OFF": 78,
+    "DEF": 74
+  },
+  {
+    "rank": 72,
+    "code": "WVU",
+    "TEAM": 76,
+    "OFF": 79,
+    "DEF": 73
+  },
+  {
+    "rank": 73,
+    "code": "PENN",
+    "TEAM": 76,
+    "OFF": 77,
+    "DEF": 75
+  },
+  {
+    "rank": 74,
+    "code": "SYR",
+    "TEAM": 75,
+    "OFF": 77,
+    "DEF": 73
+  },
+  {
+    "rank": 75,
+    "code": "GAST",
+    "TEAM": 75,
+    "OFF": 76,
+    "DEF": 74
+  },
+  {
+    "rank": 76,
+    "code": "MINN",
+    "TEAM": 75,
+    "OFF": 75,
+    "DEF": 75
+  },
+  {
+    "rank": 77,
+    "code": "UTSA",
+    "TEAM": 74,
+    "OFF": 74,
+    "DEF": 74
+  },
+  {
+    "rank": 78,
+    "code": "COLO",
+    "TEAM": 74,
+    "OFF": 72,
+    "DEF": 76
+  },
+  {
+    "rank": 79,
+    "code": "KSU",
+    "TEAM": 74,
+    "OFF": 75,
+    "DEF": 73
+  },
+  {
+    "rank": 80,
+    "code": "NAVY",
+    "TEAM": 73,
+    "OFF": 71,
+    "DEF": 75
+  },
+  {
+    "rank": 81,
+    "code": "NCSU",
+    "TEAM": 73,
+    "OFF": 73,
+    "DEF": 73
+  },
+  {
+    "rank": 82,
+    "code": "KU",
+    "TEAM": 73,
+    "OFF": 72,
+    "DEF": 74
+  },
+  {
+    "rank": 83,
+    "code": "AF",
+    "TEAM": 72,
+    "OFF": 72,
+    "DEF": 72
+  },
+  {
+    "rank": 84,
+    "code": "TLN",
+    "TEAM": 72,
+    "OFF": 72,
+    "DEF": 72
+  },
+  {
+    "rank": 85,
+    "code": "USU",
+    "TEAM": 72,
+    "OFF": 70,
+    "DEF": 74
+  },
+  {
+    "rank": 86,
+    "code": "UConn",
+    "TEAM": 71,
+    "OFF": 73,
+    "DEF": 69
+  },
+  {
+    "rank": 87,
+    "code": "BC",
+    "TEAM": 71,
+    "OFF": 71,
+    "DEF": 71
+  },
+  {
+    "rank": 88,
+    "code": "STAN",
+    "TEAM": 71,
+    "OFF": 73,
+    "DEF": 69
+  },
+  {
+    "rank": 89,
+    "code": "TROY",
+    "TEAM": 70,
+    "OFF": 69,
+    "DEF": 71
+  },
+  {
+    "rank": 90,
+    "code": "CAL",
+    "TEAM": 70,
+    "OFF": 71,
+    "DEF": 69
+  },
+  {
+    "rank": 91,
+    "code": "MRSH",
+    "TEAM": 70,
+    "OFF": 70,
+    "DEF": 70
+  },
+  {
+    "rank": 92,
+    "code": "SDSU",
+    "TEAM": 69,
+    "OFF": 70,
+    "DEF": 68
+  },
+  {
+    "rank": 93,
+    "code": "UNLV",
+    "TEAM": 69,
+    "OFF": 69,
+    "DEF": 69
+  },
+  {
+    "rank": 94,
+    "code": "YALE",
+    "TEAM": 69,
+    "OFF": 68,
+    "DEF": 70
+  },
+  {
+    "rank": 95,
+    "code": "ECU",
+    "TEAM": 68,
+    "OFF": 67,
+    "DEF": 69
+  },
+  {
+    "rank": 96,
+    "code": "LT",
+    "TEAM": 68,
+    "OFF": 67,
+    "DEF": 69
+  },
+  {
+    "rank": 97,
+    "code": "PRIN",
+    "TEAM": 68,
+    "OFF": 68,
+    "DEF": 68
+  },
+  {
+    "rank": 98,
+    "code": "SJSU",
+    "TEAM": 67,
+    "OFF": 65,
+    "DEF": 69
+  },
+  {
+    "rank": 99,
+    "code": "TLSA",
+    "TEAM": 67,
+    "OFF": 65,
+    "DEF": 69
+  },
+  {
+    "rank": 100,
+    "code": "RUTG",
+    "TEAM": 67,
+    "OFF": 68,
+    "DEF": 66
+  },
+  {
+    "rank": 101,
+    "code": "WSU",
+    "TEAM": 67,
+    "OFF": 66,
+    "DEF": 68
+  },
+  {
+    "rank": 102,
+    "code": "DEL",
+    "TEAM": 66,
+    "OFF": 65,
+    "DEF": 67
+  },
+  {
+    "rank": 103,
+    "code": "WYO",
+    "TEAM": 66,
+    "OFF": 66,
+    "DEF": 66
+  },
+  {
+    "rank": 104,
+    "code": "ODU",
+    "TEAM": 66,
+    "OFF": 64,
+    "DEF": 68
+  },
+  {
+    "rank": 105,
+    "code": "GASO",
+    "TEAM": 65,
+    "OFF": 64,
+    "DEF": 66
+  },
+  {
+    "rank": 106,
+    "code": "CCU",
+    "TEAM": 65,
+    "OFF": 63,
+    "DEF": 67
+  },
+  {
+    "rank": 107,
+    "code": "FIU",
+    "TEAM": 65,
+    "OFF": 63,
+    "DEF": 67
+  },
+  {
+    "rank": 108,
+    "code": "TEM",
+    "TEAM": 64,
+    "OFF": 63,
+    "DEF": 65
+  },
+  {
+    "rank": 109,
+    "code": "BUFF",
+    "TEAM": 64,
+    "OFF": 63,
+    "DEF": 65
+  },
+  {
+    "rank": 110,
+    "code": "UAB",
+    "TEAM": 64,
+    "OFF": 63,
+    "DEF": 65
+  },
+  {
+    "rank": 111,
+    "code": "HARV",
+    "TEAM": 63,
+    "OFF": 63,
+    "DEF": 63
+  },
+  {
+    "rank": 112,
+    "code": "NEV",
+    "TEAM": 63,
+    "OFF": 62,
+    "DEF": 64
+  },
+  {
+    "rank": 113,
+    "code": "CSU",
+    "TEAM": 63,
+    "OFF": 65,
+    "DEF": 61
+  },
+  {
+    "rank": 114,
+    "code": "HAW",
+    "TEAM": 62,
+    "OFF": 62,
+    "DEF": 62
+  },
+  {
+    "rank": 115,
+    "code": "NIU",
+    "TEAM": 62,
+    "OFF": 62,
+    "DEF": 62
+  },
+  {
+    "rank": 116,
+    "code": "USM",
+    "TEAM": 62,
+    "OFF": 63,
+    "DEF": 61
+  },
+  {
+    "rank": 117,
+    "code": "COR",
+    "TEAM": 61,
+    "OFF": 61,
+    "DEF": 61
+  },
+  {
+    "rank": 118,
+    "code": "RICE",
+    "TEAM": 61,
+    "OFF": 60,
+    "DEF": 62
+  },
+  {
+    "rank": 119,
+    "code": "NMSU",
+    "TEAM": 61,
+    "OFF": 60,
+    "DEF": 62
+  },
+  {
+    "rank": 120,
+    "code": "MTSU",
+    "TEAM": 60,
+    "OFF": 60,
+    "DEF": 60
+  },
+  {
+    "rank": 121,
+    "code": "UTEP",
+    "TEAM": 60,
+    "OFF": 60,
+    "DEF": 60
+  }
+]
